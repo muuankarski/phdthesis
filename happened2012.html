@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Vuosi 2012</title>
+
+
+
+
+
+<style type="text/css">
+.title /* Pandoc title header (h1.title) */
+    {
+    	text-align: center;
+	border-width:0px;
+	font-size: 1.5em;
+	margin: 0 0 5px 0;
+	word-spacing: .1em;
+	border-bottom: 0px;
+    }
+
+.author /* Pandoc author(s) header (h2.author) */
+    {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    }
+
+.date /* Pandoc date header (h3.date) */
+    {
+	font-family:  Verdana, Arial;
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 1.2em;
+    }
+
+
+body {
+    margin-left: 190px;
+    max-width:900px; 
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#toc {
+    font-size:0.9em;
+    height: 100%;
+    position: fixed; 
+    width: 180px;
+    left: 5px;
+    padding-top: 20px;
+    color: #0099FF;
+    border-right: 1px dashed #C1C1C1;
+}
+
+#toc_header {
+    font-size: 1em;
+    font-weight: bold;    
+    border-bottom: 1px dashed #C1C1C1;
+    color: black;
+}
+
+
+
+#toc li {
+    padding: 2px 4px;
+    margin-left: 2px;
+}
+
+
+#toc a {
+    color: #0099FF;
+    display: block;
+}
+
+
+
+blockquote {
+	padding-left: .5em; 
+    border-left: 2px solid #C1C1C1;
+	font-style: italic;
+}
+
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px dashed #ccc;
+   white-space: pre-wrap;
+   font-size:1.0em;
+    background: #FFFFFF;
+}
+
+pre code {
+   display: block; 
+   padding: 0.2em;
+   font-size:1.0em;
+}
+
+code.r, code.cpp {
+   background-color: #ECEEF0;
+}
+
+
+
+ul {
+	font-size: 100% !important;
+	font-family: Arial, Helvetica, sans-serif;
+}
+li {
+	font-family: Arial, Helvetica, sans-serif;
+ 	font-size: 1em;
+ 	line-height: 1.1em;
+}
+
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+ol {
+	list-style: decimal outside;
+	list-style-type: decimal;
+	float: none;
+	margin: .5em 0 .5em 30px;
+	padding: 0;
+}
+ul {
+	margin: .2em 0 .2em 10px;
+	padding: 0;
+}
+UL li, ol li {
+	line-height: 1.1em;
+	padding: 2px;
+}
+a:link {
+	color: #6E2817;
+    text-decoration: none;
+}
+a:hover {
+	color: #6E2817;
+}
+a:visited {
+	color: #3E4E70;
+}
+a:focus {
+	color: #6E2817;
+}
+a:active {
+	color: #3E4E70;
+}
+
+h1 {
+	font-family:  Verdana, Arial;
+	font-size: 1.5em;
+	padding: 2px;
+	line-height: 1.5em;
+	/*letter-spacing: 0.06em;
+	word-spacing: .1em;*/
+    border-bottom: 0.5px dashed #555;
+}
+h2 {
+	font-family:  Verdana, Arial;
+	font-size: 1.3em;
+	padding: 2px;
+	line-height: 1.3em;
+	letter-spacing: 0.05em;
+	word-spacing: .1em;
+
+}
+h3 {
+	font-family:  Verdana, Arial;
+	font-size: 1.1em;
+	padding: 2px;
+	line-height: 1.1em;
+	letter-spacing: 0.05em;
+	word-spacing: .1em;
+
+}
+h4 {
+	font-family: Arial;
+	font-size: 1.0em;
+	padding: 2px;
+	line-height: 1.0em;
+	color: #555;
+	font-weight: italic;
+}
+h5 {
+	font-family: Arial;
+	font-size: 1.05em;
+	padding: 2px;
+	line-height: 1.15em;
+	color: #555;
+	font-weight: normal;
+}
+h6 {
+	font-family: Arial;
+	font-size: 1em;
+	padding: 2px;
+	line-height: 1.1em;
+	color: #555;
+	font-weight: normal;
+}
+p.caption, table caption, caption{
+    margin-top:0em;
+    padding:2px;
+    font-weight:bold;
+    font-size:1.0em;
+    text-align:left;
+    font-style: italic;
+    color: #555;
+}
+
+/* table styles */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    line-height: 1.4em;
+	font-size: 1.1em;
+	font-family: monospace;
+
+}
+.views-table, table {
+	margin-left: 2px;
+	margin-bottom: 10px;
+	/*width: 1300px;*/
+}
+tr {
+	line-height: 1.2em;
+	border-bottom: #9e9e9e thin solid;
+}
+tr:last-child {
+	line-height: 1.2em;
+}
+th {
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+	border-right: #9e9e9e thin solid;
+	text-align: left;
+	border-bottom: #9e9e9e thin solid;
+}
+th:last-child {
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+	border-right: #9e9e9e thin solid;
+	text-align: left;
+}
+th:first-child {
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+	border: #9e9e9e thin solid;
+}
+tbody tr {
+	line-height: 1.2em;
+	border-left: #9e9e9e thin solid;
+}
+tbody tr:nth-child(odd) {
+	line-height: 1.2em;
+	background-color: #efefef;
+}
+td {
+	padding: 0 5px 0 5px;
+	border-right: #9e9e9e thin solid;
+}
+td:last-child {
+	padding: 0 5px 0 5px;
+}
+DL {
+	margin: .3em 0 .3em 0;
+}
+DT {
+	margin: .3em 0 .3em 0;
+}
+DD {
+	line-height: 1.5em;
+	list-style: none;
+	margin: .7em 0 .7em 2em;
+}
+td.active {
+	background-color: transparent!important;
+}
+tr:last-child {
+	border-bottom: #9e9e9e thin solid;
+}
+tr:first-child {
+	border-top: #9e9e9e thin solid;
+}
+th:last-child {
+	border-left: #9e9e9e thin solid;
+}
+th:last-child {
+	border-right: #9e9e9e thin solid;
+}
+</style>
+
+
+
+</head>
+
+<body>
+<div id="toc">
+<div id="toc_header">Table of Contents</div>
+<ul>
+<li>
+<a href="#toc_0">Vuosi 2012</a>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_1">Akateeminen julkaisutoiminta ja konferenssit</a>
+</li>
+<li>
+<a href="#toc_2">Väitöskirjan ulkopuoliset tutkimusprojektit</a>
+<ul>
+<li>
+<a href="#toc_3">Etiopia</a>
+</li>
+<li>
+<a href="#toc_4">Financing the Welfare State System in Russia</a>
+</li>
+<li>
+<a href="#toc_5">Unto Onni Aatos Kainu</a>
+</li>
+<li>
+<a href="#toc_6">RUSTFARE Advanced Grant hakemus ERC:lle</a>
+</li>
+<li>
+<a href="#toc_7">Eurooppalaiset elinolot</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_8">Oma metodologinen strategia</a>
+<ul>
+<li>
+<a href="#toc_9">Tietotekninen murros yhteiskuntatieteissä</a>
+</li>
+<li>
+<a href="#toc_10">Nykyaikaiset analyysimenetelmät</a>
+</li>
+<li>
+<a href="#toc_11">Paikkaan sidottu köyhyys ja spatiaalinen data-analyysi</a>
+</li>
+<li>
+<a href="#toc_12">Määrällinen data ja Venäjän ja Itä-Euroopan tutkimus</a>
+</li>
+<li>
+<a href="#toc_13">Omat menetelmäprojektit</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_14">Tulevaa</a>
+<ul>
+<li>
+<a href="#toc_15">Tutkimusprojektit</a>
+<ul>
+<li>
+<a href="#toc_16">Venäjän modernisaation valinnat -huippuyksikkö</a>
+</li>
+<li>
+<a href="#toc_17">Russia’s Fragmented Welfare State</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_18">Tutkimusrahoitus</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_19">Mitä tarvitsen ohjaajalta</a>
+</li>
+<li>
+<a href="#toc_20">Lähdekirjallisuus</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+<h1 id="toc_0">Vuosi 2012</h1>
+
+<p>Vuoden 2011 selvitys löytyy täältä: <a href="plan2012_Kainu.pdf">researchplan2012_Kainu.pdf</a>. Siellä on melko laaja kuvaus siitä matkasta niin teoreettisesti kuin metogdologisesti jonka koin tehneeni tutkimukseni kahtena ensimmäisenä vuotena. Tässä tekstissä paneudutaan viimeisen vuoden aikana tapahtuneisiin asioihin.</p>
+
+<h3 id="toc_1">Akateeminen julkaisutoiminta ja konferenssit</h3>
+
+<p>Tänä vuonna en ole julkaissut yhtään artikkelia. Loppukevät ja kesä meni kahden konferenssin paperin kirjoittamisessa. Kansainvälisen sosiologijärjestön ISA:n stream <a href="http://www.nova.no/id/24834">RC19 konferenssissa Oslossa</a> elokuun lopulla esittelin Mikko Niemelän kanssa uutta versiota paperistamme <a href="files/kainu_niemela_attributionsforpoverty_oslo2012.pdf">Attributions for Poverty in Post-Socialist Countries</a>. Kirjoitimme paperia melko paljon eteenpäin kesä-heinäkuussa ja analyysit tein aiempien regressioiden sijaan <strong>monitasomallien</strong> avulla. Menetelmä oli minulle uusi, mutta saimme hyödynnettyä sitä paperissamme. Syyskuussa konferenssin jälkeen olen kehittelin analyysejä paljon pidemmälle. Olemme kuitenkin päättäneet vielä hioa koko paperia, jotta voisimme saada sen läpi johonkin hyvään aluejournaaliin, kuten <a href="http://www.tandfonline.com/loi/ceas20">Europe-Asia Studies</a>:iin.</p>
+
+<p>Heti RC19 konferenssin jälkeen matkustin Edinburgiin <a href="http://www.espanet2012.info/">ESPANET:in vuosittaiseen konferenssiin</a> esittelemään paperiani <a href="files/Mkainu_Espanet2012.pdf">SOCIAL ASSISTANCE AND EU 2020 POVERTY TARGET - Targeting Performance of Minimum Income Protection at Multidimensional Poverty in Six EU Member States</a>. Osa analyyseistä perustui aikaisempiin selvityksiini, mutta kirjoitin paperin ja analysoin aineistot heinä-elokuun aikana. Paperi oli teoreettisesti melko mitätön ja se puolusti paikkaansa lähinnä ajankohtaisuudellaan. Sain paperiin hyviä kommentteja ja aion kirjoittaa seuraavan radikaalisti muokatun version tutkijakoulun kevätseminaariin 14.-15.2. </p>
+
+<h3 id="toc_2">Väitöskirjan ulkopuoliset tutkimusprojektit</h3>
+
+<p>Väitöskirjaan liittyneiden tutkimusten ohella olin mukana monissa muissa projekteissa. Listaan tähän ne, joiden parissa aikaa kului kymmeniä tunteja ts. viikko tai enemmän.</p>
+
+<h4 id="toc_3">Etiopia</h4>
+
+<p>Huhtikuussa olin kaksi viikkoa Etiopiassa paikallisen tilastoviranomaisen <a href="http://www.csa.gov.et/">CSA</a>:n apuna THL:n Simo Mannilan kanssa kirjoittamassa <a href="http://www.csa.gov.et/docs/wms_summary_report.pdf">yhteenvetoraporttia</a> Suomen ulkoministeriön, Tilastokeskuksen ja THL:n yhteistyössä UNDP:n ja CSA:n kanssa keräämästä Welfare Monitoring Surveystä. Vaikka emme päässeet analysoimaan itse WMS-raakadataa, vaan olimme heidän tekemien tilastollisten taulukoiden varassa, oli projekti ammatillisesti kiinnostava. CSA:n edustajat kiinnostuivat pitämänäni R-klinikan myötä ajatuksesta <strong>toistettavasta analyysistä</strong> ja sen hyödyntämisestä omassa toiminnassaan, ja esittivät että tulisin pitämään jatkossa koulutusta. Suunnittelin kesän aikana jatkohankkeen <a href="http://research.muuankarski.org/csa/">Capacity building in statistical analysis using free and open source software</a>, jolle ulkoministeriö myönsi rahoituksen. Toistaiseksi hankkeen toteutuminen ei ole edennyt. Olen itse ollut hyvin kiireinen väitöstutkimuksen kanss2a enkä ole ehtinyt asiaa edistämään.</p>
+
+<h4 id="toc_4">Financing the Welfare State System in Russia</h4>
+
+<p>Toukokuussa Christian Aspalter pyysi Markku Kivistä kirjoittamaan luvun Venäjän hyvinvointivaltion rahoituksesta hänen ja Peter Whiteford toimittamaan Aasian hyvinvointivaltioiden rahoistusta käsittelevään kirjaan. Tein analyysejä kesäkuussa luvun ensimmäiseen vedokseen. Aineistona oli etupäässä Rosstatin tilastoja, ja siinä kirjoitetut analyysikoodit ovat hyödyllisiä myös väitöstutkimuksessa.</p>
+
+<h4 id="toc_5">Unto Onni Aatos Kainu</h4>
+
+<p>Syntyi 10.10 Aleksis Kiven päivänä. Olin miltei kaksi viikkoa poissa toimistolta.</p>
+
+<h4 id="toc_6">RUSTFARE Advanced Grant hakemus ERC:lle</h4>
+
+<p>Instituutissa valmisteltiin syksyn aikana kansainvälisen tutkijaryhmän kesken ERC Advanced Grant hakemus otsikolla: <strong>Reforming the Welfare Regime in Russia: Choice and Agency</strong>. Unton syntymän jälkeinen kuukausi meni suurelta osin tähän projektiin.</p>
+
+<p>Hakemuksessa kirjoitin hyvinvointivaltiomallikeskustelusta sekä vastasin projektiin kaavaillun <a href="http://rustfare.tumblr.com/datacentre">Aleksanteri Centre for Russian Welfare Data</a> ideoinnista ja demovaiheen toteutuksesta. Tutkimusblogin demoversio on <a href="http://rustfare.tumblr.com/">täällä</a> ja pääinstrumentiksi kaavaillun R-paketin kehityssivut taas täällä: <a href="http://muuankarski.github.com/rustfaRe/">rustfaRe @ GitHub</a>. Projektihakemuksessa minulle on haettu rahaa ensimmäinen vuosi väitöskirjan tekemiseen ja kolme seuraavaa vuotta <em>post doc</em> -tutkimuksen tekemiseen.</p>
+
+<h4 id="toc_7">Eurooppalaiset elinolot</h4>
+
+<p>Loppusyksystä tein vielä analyysejä Kelan tutkimusosaston vetämään <strong>Eurooppalaiset elinolot</strong> -kirjaprojektin johdantolukuun, jota olen tehnyt yhdessä Mikko Niemelän kanssa. Kirjan analyysit perustuvat EU-silc aineistoon, joka on yksi itse käyttämistäni aineistoista. Tähän kirjoitetut analyysikoodit ovat merkittävä kontribuutio omaan tutkimukseeni.</p>
+
+<h2 id="toc_8">Oma metodologinen strategia</h2>
+
+<h3 id="toc_9">Tietotekninen murros yhteiskuntatieteissä</h3>
+
+<p>Merkittävän osan työajasta olen käyttänyt omien data-analyysi- taitojen kehittämiseen. Olen vakuuttunut siitä että   <strong>määrälliseksi tai kvantitatiiviseksi</strong> kutsuttu yhteiskuntatutkimus on väistämättä muuttumassa <strong>laskennalliseksi yhteiskuntatutkimukseksi</strong>. Harvardin yliopiston <a href="http://www.iq.harvard.edu/"><em>Institute for Quantitative Social Science</em></a>:n johtaja professori <a href="http://gking.harvard.edu/">Gary King</a> kirjoittaa juuri ilmestyneessä artikkelissaan <em>Restructuring the Social Sciences: Reflections from Harvard’s Institute for Quantitative Social Science</em> [s. 3, @king_restructuring_2013] osuvasti:</p>
+
+<blockquote>
+<p>An important driver of the change sweeping the field is the enormous quantities of highly informative data inundating almost every area we study. In the last half-century, the information base of social science research has primarily come from three sources: survey research, end of period government statistics, and one-off studies of particular people, places, or events. In the next half-century, these sources will still be used and improved, but the number and diversity of other sources of information are increasing exponentially, and are already many orders of magnitude more informative than ever before. </p>
+</blockquote>
+
+<p>Tämä muutos on jo tapahtunut, mutta suomalaisessa yhteiskuntatieteessä siihen on reagoitu hitaasti. Yksi konkreettinen avaus on Aalto-yliopiston ja Helsingin yliopiston tietojenkäsittelytieteen jatko-opiskelijoiden perustama <a href="http://louhos.github.com/">Louhos-projekti</a>. Louhos on yksi kiinnostavimmista yhteiskuntatieteellisen datan analysointiprojekteista, olkoonkin ettei siinä ole lainkaan yhteiskuntatieteilijöitä mukana.</p>
+
+<h3 id="toc_10">Nykyaikaiset analyysimenetelmät</h3>
+
+<p>Gary Kingin mainitsemaan <em>menneen puolivuosisadan</em> vaatimuksiin kehittyi joukko kaupallisia analyysiohjelmistoja. Valmiin survey-datan ja tilastojen analysointiin sopivat ohjelmistot kuten Stata, SPSS, SAS, Minitab jne. jne. Nämä lähestysmistavat eivät kuitenkaan vastaa Kingin <em>tulevan puolivuosisadan</em> tutkimuksellisiin haasteisiin, ainakaan vielä pitkään aikaan.</p>
+
+<p>Itse olen käyttänyt paljon aikaani ja voimiani saadakseni edes kelvolliset analyyttiset taidot, joilla voisi vastata sekä menneen että tulevan haasteisiin. Olen opiskellut erilaisia ohjelmointikieliä pääpainon ollessa <a href="http://www.r-project.org/">R-kielessä</a> ja sen monissa laajennoksissa. </p>
+
+<p>R-kieli tulee mullistamaan määrällisen yhteiskuntatutkimuksen. Sen kiistattomat edut ovat ilmaisuus ja lähdekoodin avoimuus. Monta vuotta ne olivat este kielen yleistymiselle, mutta nykyään ne ruokkivat <a href="http://r4stats.com/articles/popularity/">ohjelmiston suosiota</a>. R-kieltä voi käyttää kuka tahansa, uusimmat menetelmät kirjoitetaan R-llä ja internetissä on satoja <a href="http://www.r-bloggers.com/">R-blogeja</a>, keskustelupalstoja ja sähköpostilistoja, joilla kehitetään uusia menetelmiä ja vaihdetaan koodia. <a href="https://www.coursera.org/">Courseran</a> tammikuun alussa alkaneelle R-kurssille <em>Computing for Data Analysis</em> ilmoittautui yli 40 000 opiskelijaa.</p>
+
+<h3 id="toc_11">Paikkaan sidottu köyhyys ja spatiaalinen data-analyysi</h3>
+
+<p>Oma teoreettinen lähestymistapani köyhyyteen ja eriarvoisuuteen postsosialistisessa transitiossa korostaa paikan merkitystä (ks. <a href="files/sospol2011_alue.pdf">Aluenäkökulma sosiaalisen tulonsiirtojärjestelmän köyhyysvaikutuksiin laajentuneessa EU:ssa</a>). Olen jopa väittänyt että Venäjän ja Itä-Euroopan kohdalla voidaan paikasta puhua <strong>köyhyyden riskitekijänä</strong>. Toisin sanoen ko. alueen maissa asuinpaikka määrittää korostuneesti ihmisten toimeentulon tasoa. Samoin kun postsosialistisesta transitiosta puhutaan eri väestöryhmien välisen taloudellisen eriarvoisuuden kasvun tarinana (ns. sosiaalinen eriarvoistuminen) on hyvin perustelua nähdä transition eriarvoistuminen myös suhteessa paikkaan. Tietyt alueet ovat vaurastuneet, toiset kurjistuneet. Sosiospatiaalisen köyhyysanalyysin toteuttamisessa R-kielen hallinta on välttämätöntä. Olen ilmoittautunut Oslon yliopiston kesäkoulun kurssille: <a href="http://www.sv.uio.no/english/research/doctoral-degree/summer-school/courses-2013/bivand.html">Using Spatial Data in the Social Sciences: An Applied Survey</a>, jonka oppimäärä on hyvin relevanttia spatiaalisen analyysin teoria- ja menetelmäosaamiselle väitöskirjassani.</p>
+
+<h3 id="toc_12">Määrällinen data ja Venäjän ja Itä-Euroopan tutkimus</h3>
+
+<p>Määrällisiin aineistoihin perustuva Venäjän ja Itä-Euroopan tutkimus asettaa erityisen kovat vaatimuksen data-analyysin taidoille. Tutkimus- tai tilastoaineistojen <em>saatavuus</em> on teknisesti haastavaa (Ks. lisää <a href="http://rustfare.tumblr.com/datacentre">Rustfare Data Center</a>) ja aineistot ovat usein hyvin <em>sotkuisia</em> (messy data). Ns. perinteisin keinoin niiden hyödyntäminen on hyvin aikaa vievää. (Pidän tätä yhtenä syynä sille, miksi määrällisiä aineistoja käytetään Venäjän ja Itä-Euroopan tutkimuksessa niin vähän.) Kelvolliset tutkimusaineistot joutuu aina yhdistelemään eri lähteistä ja näiden tietoa tuottavien tahojen järjestelmät ovat alituisessa muutoksessa. </p>
+
+<h3 id="toc_13">Omat menetelmäprojektit</h3>
+
+<p>Joulun aikana kokosin ja kirjoitin puhtaaksi omia r-skriptejä, joita olen käyttänyt eri aineistojen analysointiin, ja kokosin niitä osoitteeseen <a href="http://markuskainu.fi/r-tutorial/">markuskainu.fi/r-tutorial/</a>. Sivuston ensisijainen tarkoitus on olla helppokäyttöinen hakuteos itselleni, mutta siitä voisi tulevaisuudessa hyötyä myös ulkopuoliset. Ulkopuolista kiinnostusta sitä kohtaan on ollut, mutta suomalaisen yhteiskuntatieteen kentällä mielenkiinto on toistaiseksi ollut vähäistä. Tästä erimerkkinä mainittakoon workshop <a href="http://markuskainu.fi/r/">Oikopolkua datasta julkaisuun</a>, jonka pidän Turussa eri yliopistojen yhteisen <a href="tcwr-webbi">Turku Center for Welfare Research</a> menetelmäworkshoppina. Perustutkinto-opiskelijoille olen suunnitellut kurssia <a href="http://research.muuankarski.org/data_analyysi/">Johdatus data-analyysiin yhteiskuntatutkimuksessa</a>. (Slaidit vaihtuvat nuolinäppäimillä).</p>
+
+<p>Muuttuvien tutkimuskysymysten ja -aineistojen ohella olen kokenut nykyaikaisiin ja avoimen lähdekoodin analyysimenetelmiin perehtymisen tärkeänä myös oman riippumattomuuden ja toimeentulon kannalta. Pitäisin hyvin hankala tilannetta, jossa vuosien työllä hankkimani analyyttiset taidot olisivat käytössäni vain jos työnantajani suostuisi ostamaan kyseisen ohjelmiston, tai joutuisin ostamaan sen vuosittain omalla rahalla. Valtavirran kaupallisten analyysiohjelmistojen akateemiset lisenssit myös kieltävät ohjelmiston käytön ei-akateemiseen työhön, jota osa työstäni väistämättä tulee jatkossa olemaan.</p>
+
+<p>Tässä sivussa olen luonut pelkkiin avoimen lähdekoodin ohjelmiin perustuvan analyysi- ja julkaisuympäristyön linux-käyttöjärjestelmälle.</p>
+
+<h2 id="toc_14">Tulevaa</h2>
+
+<p>Tämä alkanut vuosi on väitöskirjaprojektin neljäs ja nykyrahoituksella viimeinen vuosi. Aikataulu on erittäin haastava projektin loppuunsaattamiselle. Tänä vuonna keskityn meneillään olevien papereiden valmiiksi kirjoittamiseen ja julkaisemiseen.</p>
+
+<h3 id="toc_15">Tutkimusprojektit</h3>
+
+<p>Tulevana vuotena pyrin valikoimaan tarkasti mihin projekteihin osallistun, jotta pystyn keskittymään väitöskirjatyöhöni täysipainoisesti. Vahvasti omaan substanssiin ja menetelmäosaamiseen perustuvista projekteista olen kiinnostunut.</p>
+
+<h4 id="toc_16">Venäjän modernisaation valinnat -huippuyksikkö</h4>
+
+<p>Eurooppaa ja Itä-Eurooppaa käsittelevät tutkimukseni tulen tekemään yksin, mutta Venäjää käsittelevissä tutkimuksissa etenen yhteistyössä instituutin <a href="www.helsinki.fi/aleksanteri/crm/">Venäjän modernisaation valinnat</a> -huippuyksikön <a href="www.helsinki.fi/aleksanteri/crm/clusters.html">Welfere regime-klusterin</a> tutkijaryhmän kanssa. Jatkamme syksyllä aloittamaamme kahden viikon välein kokoontuvaa teorialukupiiriä, jonka puitteissa luomme yhteistä teoreettista viitekehystä Venäjän hyvinvointivaltiokehityksen tarkasteluun. Tämän vuoden kuluessa aloitamme myös aineiston keruun Togliattin tapaustutkimuksen osalta ja jatkan mittavaa urakkaani Venäjää käsittelevien tutkimusaineistojen sekä tilastoaineistojen käyttöönoton ja analysoinnin osalta. (ks. lisää <a href="http://rustfare.tumblr.com/datacentre">data centre</a> -hanke). Data centre -hankkeeseen olen aloittamssa yhteistyötä <a href="http://louhos.github.com/">Louhos-projektin</a> </p>
+
+<h4 id="toc_17">Russia’s Fragmented Welfare State</h4>
+
+<p>Yksi esimerkki meneillään olevista projekteista, jotka liittyvät omaan tutkimusalaani on Brownin yliopiston valtio-opin professori <a href="http://www.brown.edu/Departments/Political_Science/faculty/facultypage.php?id=1106970252">Linda Cookin</a> hanke <strong>Russia’s Fragmented Welfare State</strong>. Oma osuuteni tosin käsittää vain tiedonhankintaa ja analysointia.</p>
+
+<h3 id="toc_18">Tutkimusrahoitus</h3>
+
+<p>Oma rahoitus ja toimeentulo on toisinaan mielessä. Instituutin tutkijakoulun rahoitus päättyy osaltani tämän vuoden lopussa. Ainoa konkreettinen toimi jatkorahoituksen hakemiseen on ollut ERC:n Advanced Grant -hakemus, jonka läpimenosta ei tietenkään ole mitään takeita. Epävarmuus toimeentulosta näyttää voimistuneen väitöskirjantekijöiden kanssa. Jatkorahoitusmahdollisuudet ovat kaventuneet, säätiöiden apurahojen hakijamäärät ovat kasvaneet, eikä työpaikkoja ole yhtään aikaisempaa enempää. </p>
+
+<p>Omalta osaltani olen pyrkinyt vähentämään rahoitushuolia juuri hankkimalla sellaista analyyttistä osaamista, jolla on markkina-arvoa myös tutkimuksen akateemisen ulkopuolella. Lähtökohtaisesti ajatus keikkatöiden tekemisestä akateemisen työn rahoittamiseksi ei kuitenkaan houkuttele, olkoonkin ettei sekään ole poissuljettu vaihtoehto.</p>
+
+<h2 id="toc_19">Mitä tarvitsen ohjaajalta</h2>
+
+<p>Ohjaajalta tarvitsisin nyt näkemyksiä sekä 1) erillisten artikkeliaihioiden kehittämiseen että 2) väitöskirjan kokonaisuuden hahmottamiseen.</p>
+
+<h2 id="toc_20">Lähdekirjallisuus</h2>
+
+</body>
+
+</html>

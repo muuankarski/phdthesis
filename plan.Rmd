@@ -1,0 +1,8 @@
+| [Etusivu](index.html) | [Tilannekatsaus](current.html) | [Artikkeliaihiot](article.html) | [Tutkimussuunnitelmat](plan.html) |
+
+# Tutkimussuunnitelmat
+
+# Vanhat tutkimussuunnitelmat - past research plans
+
+- [Updated plan in 2012](files/researchplan2012_Kainu.pdf)
+- [Original plan in 2009](files/research plan_Aleksanteri_MarkusKainu.pdf)

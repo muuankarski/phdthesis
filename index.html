@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Väitöskirjaprojektin yhteenveto</title>
+
+
+
+
+
+<style type="text/css">
+.title /* Pandoc title header (h1.title) */
+    {
+    	text-align: center;
+	border-width:0px;
+	font-size: 1.5em;
+	margin: 0 0 5px 0;
+	word-spacing: .1em;
+	border-bottom: 0px;
+    }
+
+.author /* Pandoc author(s) header (h2.author) */
+    {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    }
+
+.date /* Pandoc date header (h3.date) */
+    {
+	font-family:  Verdana, Arial;
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 1.2em;
+    }
+
+
+body {
+    margin-left: 190px;
+    max-width:900px; 
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#toc {
+    font-size:0.9em;
+    height: 100%;
+    position: fixed; 
+    width: 180px;
+    left: 5px;
+    padding-top: 20px;
+    color: #0099FF;
+    border-right: 1px dashed #C1C1C1;
+}
+
+#toc_header {
+    font-size: 1em;
+    font-weight: bold;    
+    border-bottom: 1px dashed #C1C1C1;
+    color: black;
+}
+
+
+
+#toc li {
+    padding: 2px 4px;
+    margin-left: 2px;
+}
+
+
+#toc a {
+    color: #0099FF;
+    display: block;
+}
+
+
+
+blockquote {
+	padding-left: .5em; 
+    border-left: 2px solid #C1C1C1;
+	font-style: italic;
+}
+
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px dashed #ccc;
+   white-space: pre-wrap;
+   font-size:1.0em;
+    background: #FFFFFF;
+}
+
+pre code {
+   display: block; 
+   padding: 0.2em;
+   font-size:1.0em;
+}
+
+code.r, code.cpp {
+   background-color: #ECEEF0;
+}
+
+
+
+ul {
+	font-size: 100% !important;
+	font-family: Arial, Helvetica, sans-serif;
+}
+li {
+	font-family: Arial, Helvetica, sans-serif;
+ 	font-size: 1em;
+ 	line-height: 1.1em;
+}
+
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+ol {
+	list-style: decimal outside;
+	list-style-type: decimal;
+	float: none;
+	margin: .5em 0 .5em 30px;
+	padding: 0;
+}
+ul {
+	margin: .2em 0 .2em 10px;
+	padding: 0;
+}
+UL li, ol li {
+	line-height: 1.1em;
+	padding: 2px;
+}
+a:link {
+	color: #6E2817;
+    text-decoration: none;
+}
+a:hover {
+	color: #6E2817;
+}
+a:visited {
+	color: #3E4E70;
+}
+a:focus {
+	color: #6E2817;
+}
+a:active {
+	color: #3E4E70;
+}
+
+h1 {
+	font-family:  Verdana, Arial;
+	font-size: 1.5em;
+	padding: 2px;
+	line-height: 1.5em;
+	/*letter-spacing: 0.06em;
+	word-spacing: .1em;*/
+    border-bottom: 0.5px dashed #555;
+}
+h2 {
+	font-family:  Verdana, Arial;
+	font-size: 1.3em;
+	padding: 2px;
+	line-height: 1.3em;
+	letter-spacing: 0.05em;
+	word-spacing: .1em;
+
+}
+h3 {
+	font-family:  Verdana, Arial;
+	font-size: 1.1em;
+	padding: 2px;
+	line-height: 1.1em;
+	letter-spacing: 0.05em;
+	word-spacing: .1em;
+
+}
+h4 {
+	font-family: Arial;
+	font-size: 1.0em;
+	padding: 2px;
+	line-height: 1.0em;
+	color: #555;
+	font-weight: italic;
+}
+h5 {
+	font-family: Arial;
+	font-size: 1.05em;
+	padding: 2px;
+	line-height: 1.15em;
+	color: #555;
+	font-weight: normal;
+}
+h6 {
+	font-family: Arial;
+	font-size: 1em;
+	padding: 2px;
+	line-height: 1.1em;
+	color: #555;
+	font-weight: normal;
+}
+p.caption, table caption, caption{
+    margin-top:0em;
+    padding:2px;
+    font-weight:bold;
+    font-size:1.0em;
+    text-align:left;
+    font-style: italic;
+    color: #555;
+}
+
+/* table styles */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    line-height: 1.4em;
+	font-size: 1.1em;
+	font-family: monospace;
+
+}
+.views-table, table {
+	margin-left: 2px;
+	margin-bottom: 10px;
+	/*width: 1300px;*/
+}
+tr {
+	line-height: 1.2em;
+	border-bottom: #9e9e9e thin solid;
+}
+tr:last-child {
+	line-height: 1.2em;
+}
+th {
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+	border-right: #9e9e9e thin solid;
+	text-align: left;
+	border-bottom: #9e9e9e thin solid;
+}
+th:last-child {
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+	border-right: #9e9e9e thin solid;
+	text-align: left;
+}
+th:first-child {
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+	border: #9e9e9e thin solid;
+}
+tbody tr {
+	line-height: 1.2em;
+	border-left: #9e9e9e thin solid;
+}
+tbody tr:nth-child(odd) {
+	line-height: 1.2em;
+	background-color: #efefef;
+}
+td {
+	padding: 0 5px 0 5px;
+	border-right: #9e9e9e thin solid;
+}
+td:last-child {
+	padding: 0 5px 0 5px;
+}
+DL {
+	margin: .3em 0 .3em 0;
+}
+DT {
+	margin: .3em 0 .3em 0;
+}
+DD {
+	line-height: 1.5em;
+	list-style: none;
+	margin: .7em 0 .7em 2em;
+}
+td.active {
+	background-color: transparent!important;
+}
+tr:last-child {
+	border-bottom: #9e9e9e thin solid;
+}
+tr:first-child {
+	border-top: #9e9e9e thin solid;
+}
+th:last-child {
+	border-left: #9e9e9e thin solid;
+}
+th:last-child {
+	border-right: #9e9e9e thin solid;
+}
+</style>
+
+
+
+</head>
+
+<body>
+<div id="toc">
+<div id="toc_header">Table of Contents</div>
+<ul>
+<li>
+<a href="#toc_0">Johdanto</a>
+<ul>
+<li>
+<a href="#toc_1">- uuden datan aika - joustavat työkalut</a>
+</li>
+<li>
+<a href="#toc_2">Projektit</a>
+<ul>
+<li>
+<a href="#toc_3">Artikkelivedokset</a>
+<ul>
+<li>
+<a href="#toc_4">General post-socialist</a>
+</li>
+<li>
+<a href="#toc_5">Russian spesific</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">Data ja metodiprojektit</a>
+<ul>
+<li>
+<a href="#toc_7">rOpenGov-projektiin liittyvät</a>
+</li>
+<li>
+<a href="#toc_8">Omat sekalaiset</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_9">Muut ammatilliset kirjoitusprojektit</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_10">Suunnitelmat</a>
+</li>
+<li>
+<a href="#toc_11">Vuosikertomukset</a>
+</li>
+<li>
+<a href="#toc_12">Yhteenvetoartikkeli</a>
+</li>
+</ul>
+</div>
+
+
+<h1 class="title">Väitöskirjaprojektin yhteenveto</h1>
+
+<h1 id="toc_0">Johdanto</h1>
+
+<p>Tämä sivu pitää sisällään kaiken vaitöskirjaani liittyvän.
+<strong>Projektit</strong>-osiossa olen linkittänyt kaikki artikkeli- ja
+dataprojektit, joista väitöskirjani rakentuu. <strong>Suunnitelmat</strong>-osiossa
+on . <strong>Vuosikertomukset</strong> osiossa taas on vuosien 2011, 2012 ja 2013
+selvitykset.</p>
+
+<ul>
+<li>huonomuistisuus - versionhallinta</li>
+</ul>
+
+<h2 id="toc_1">- uuden datan aika - joustavat työkalut</h2>
+
+<h2 id="toc_2">Projektit</h2>
+
+<h3 id="toc_3">Artikkelivedokset</h3>
+
+<h4 id="toc_4">General post-socialist</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Attributions for poverty in Post-Socialist countries</td>
+<td>Article draft with Mikko</td>
+<td><a href="http://muuankarski.github.io/attributions/">github</a></td>
+</tr>
+<tr>
+<td>Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe</td>
+<td>Article draft with Olli and Joakim</td>
+<td><a href="http://muuankarski.github.io/exitentry/">github</a></td>
+</tr>
+<tr>
+<td>At the origins of post-socialist poverty - spells of multidimensional poverty</td>
+<td>Article draft</td>
+<td><a href="http://muuankarski.github.io/temporal/">github</a></td>
+</tr>
+</tbody></table>
+
+<h4 id="toc_5">Russian spesific</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Monetisation of l&#39;goty</td>
+<td>Article draft</td>
+<td><a href="http://muuankarski.github.io/monetisation/">github</a></td>
+</tr>
+<tr>
+<td>Geographies of deprivation in Russian Federation</td>
+<td>Description here</td>
+<td><a href="https://github.com/muuankarski/geographies">github</a></td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_6">Data ja metodiprojektit</h3>
+
+<h4 id="toc_7">rOpenGov-projektiin liittyvät</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>rOpenGov</strong> - R Ecosystem for Open Government Data and Computational Social Science</td>
+<td>A joint project of many developers internationally</td>
+<td><a href="http://ropengov.github.io/">github</a></td>
+</tr>
+<tr>
+<td><strong>rQog</strong> - Search, extract and format data from the Quality of Government Institute data</td>
+<td>Simple, targeted library for QoG-database</td>
+<td><a href="https://github.com/muuankarski/rQog">github</a> <a href="http://markuskainu.fi/rqog/">documentation</a></td>
+</tr>
+<tr>
+<td><strong>rustfare</strong> - Algorithms for Russian data</td>
+<td>My own project within rOpenGov</td>
+<td><a href="https://github.com/rOpenGov/rustfare">github</a> <a href="http://markuskainu.fi/rustfare/">documentation</a></td>
+</tr>
+</tbody></table>
+
+<h4 id="toc_8">Omat sekalaiset</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Exploring Russian Census data using R</td>
+<td>Data mining project for article</td>
+<td><a href="https://github.com/muuankarski/censusanalysis">github</a></td>
+</tr>
+<tr>
+<td>GoogleVis aka bubble chart visualisation of Rosstat Regional Data</td>
+<td>Visualization of Russian regional data for teaching and exploring the data</td>
+<td><a href="https://github.com/muuankarski/rusRegionGVis">github</a></td>
+</tr>
+<tr>
+<td>Quality of Government Institute data as Motion Charts</td>
+<td>Visualization of Quality of government data for teaching and data exploration</td>
+<td><a href="https://github.com/muuankarski/QogGVis">github</a></td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_9">Muut ammatilliset kirjoitusprojektit</h3>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Kainu, Markus, &amp; Niemelä, Mikko. Taloudelliset elinolot ja elämänvaiheet Euroopassa. In Eurooppalaiset elinolot (Forthcoming), edited by Mikko Niemelä. Helsinki: Kansaneläkelaitos, 2014. (Accepted)</td>
+<td>Johdanto-luku kirjaan</td>
+</tr>
+<tr>
+<td>Kainu, Markus. 2014. R-language for computational analysis in social and humanitarian sciences</td>
+<td>Luku Jessica Parland.von Essenin ja Kenneth Nybergin toimittamaan <a href="http://digihist.se/">Historia i en digital värld</a>-kirjaan</td>
+</tr>
+</tbody></table>
+
+<h1 id="toc_10">Suunnitelmat</h1>
+
+<ul>
+<li>  <a href="plan2014.html">Vuodelle 2014</a></li>
+<li>  <a href="plan2013.html">Vuodelle 2013</a></li>
+<li>  <a href="plan2012.html">Vuodelle 2012</a></li>
+<li>  <a href="plan2011.html">Vuodelle 2011</a></li>
+<li>  <a href="plan2010.html">Alkuperäinen</a></li>
+</ul>
+
+<h1 id="toc_11">Vuosikertomukset</h1>
+
+<ul>
+<li>  <a href="happened2013.html">Vuosi 2013</a></li>
+<li>  <a href="happened2012.html">Vuosi 2012</a></li>
+<li>  <a href="happened2011.html">Vuosi 2011</a></li>
+</ul>
+
+<h1 id="toc_12">Yhteenvetoartikkeli</h1>
+
+<p>Tänne olen alkanut hahmottelemaan väitöskirjan yhteenvetoartikkelia.</p>
+
+<ul>
+<li>huonomuistisuus</li>
+</ul>
+
+</body>
+
+</html>
