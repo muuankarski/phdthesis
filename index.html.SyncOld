@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<title>Artikkelit</title>
+<title>Johdanto</title>
 
 
 
@@ -307,15 +307,184 @@ th:last-child {
 <div id="toc_header">Table of Contents</div>
 <ul>
 <li>
-<a href="#toc_0">Artikkelit</a>
+<a href="#toc_0">Johdanto</a>
+<ul>
+<li>
+<a href="#toc_1">Projektit</a>
+<ul>
+<li>
+<a href="#toc_2">Article drafts</a>
+<ul>
+<li>
+<a href="#toc_3">General post-socialist</a>
+</li>
+<li>
+<a href="#toc_4">Russian spesific</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">Data ja metodiprojektit</a>
+<ul>
+<li>
+<a href="#toc_6">rOpenGov-projektiin liittyvät</a>
+</li>
+<li>
+<a href="#toc_7">Omat sekalaiset</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_8">Muut ammatilliset projektit</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_9">Suunnitelmat</a>
+</li>
+<li>
+<a href="#toc_10">Vuosikertomukset</a>
 </li>
 </ul>
 </div>
 
 
-<p>| <a href="index.html">Etusivu</a> | <a href="current.html">Tilannekatsaus</a> | <a href="article.html">Artikkeliaihiot</a> | <a href="plan.html">Tutkimussuunnitelmat</a> |</p>
+<p>Table of Contents</p>
 
-<h1 id="toc_0">Artikkelit</h1>
+<h1 id="toc_0">Johdanto</h1>
+
+<p>Tämä sivu pitää sisällään kaiken vaitöskirjaani liittyvän.
+<strong>Projektit</strong>-osiossa olen linkittänyt kaikki artikkeli- ja
+dataprojektit, joista väitöskirjani rakentuu. <strong>Suunnitelmat</strong>-osiossa
+on . <strong>Vuosikertomukset</strong> osiossa taas on vuosien 2011, 2012 ja 2013
+selvitykset.</p>
+
+<h2 id="toc_1">Projektit</h2>
+
+<h3 id="toc_2">Article drafts</h3>
+
+<h4 id="toc_3">General post-socialist</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Attributions for poverty in Post-Socialist countries</td>
+<td>Article draft with Mikko             <a href="http://muuankarski.github.io/attributions/">github</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe</td>
+<td>Article draft with Olli and Joakim</td>
+<td><a href="http://muuankarski.github.io/exitentry/">github</a></td>
+</tr>
+<tr>
+<td>At the origins of post-socialist poverty - spells of multidimensional poverty</td>
+<td>Article draft</td>
+<td><a href="http://muuankarski.github.io/temporal/">github</a></td>
+</tr>
+</tbody></table>
+
+<h4 id="toc_4">Russian spesific</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Monetisation of l&#39;goty</td>
+<td>Article draft <a href="http://muuankarski.github.io/monetisation/">github</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Geographies of deprivation in Russian Federation</td>
+<td>Description here</td>
+<td><a href="https://github.com/muuankarski/geographies">github</a></td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_5">Data ja metodiprojektit</h3>
+
+<h4 id="toc_6">rOpenGov-projektiin liittyvät</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>rOpenGov</strong> - R Ecosystem for Open Government Data and Computational Social Science</td>
+<td>A joint project of many developers internationally</td>
+<td><a href="http://ropengov.github.io/">github</a></td>
+</tr>
+<tr>
+<td><strong>rQog</strong> - Search, extract and format data from the Quality of Government Institute data</td>
+<td>Simple, targeted library for QoG-database</td>
+<td><a href="https://github.com/muuankarski/rQog">github</a> <a href="http://markuskainu.fi/rqog/">documentation</a></td>
+</tr>
+<tr>
+<td><strong>rustfare</strong> - Algorithms for Russian data</td>
+<td>My own project within rOpenGov</td>
+<td><a href="https://github.com/rOpenGov/rustfare">github</a> <a href="http://markuskainu.fi/rustfare/">documentation</a></td>
+</tr>
+</tbody></table>
+
+<h4 id="toc_7">Omat sekalaiset</h4>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Exploring Russian Census data using R</td>
+<td>Data mining project for article</td>
+<td><a href="https://github.com/muuankarski/censusanalysis">github</a></td>
+</tr>
+<tr>
+<td>GoogleVis aka bubble chart visualisation of Rosstat Regional Data</td>
+<td>Visualization of Russian regional data for teaching and exploring the data</td>
+<td><a href="https://github.com/muuankarski/rusRegionGVis">github</a></td>
+</tr>
+<tr>
+<td>Quality of Government Institute data as Motion Charts</td>
+<td>Visualization of Quality of government data for teaching and data exploration</td>
+<td><a href="https://github.com/muuankarski/QogGVis">github</a></td>
+</tr>
+</tbody></table>
+
+<h3 id="toc_8">Muut ammatilliset projektit</h3>
+
+<h1 id="toc_9">Suunnitelmat</h1>
+
+<ul>
+<li>  <a href="plan2014.html">Vuodelle 2014</a></li>
+<li>  <a href="plan2013.html">Vuodelle 2013</a></li>
+<li>  <a href="plan2012.html">Vuodelle 2012</a></li>
+<li>  <a href="plan2011.html">Vuodelle 2011</a></li>
+<li>  <a href="plan2010.html">Alkuperäinen</a></li>
+</ul>
+
+<h1 id="toc_10">Vuosikertomukset</h1>
+
+<ul>
+<li>  <a href="happened2013.html">Vuosi 2013</a></li>
+<li>  <a href="happened2012.html">Vuosi 2012</a></li>
+<li>  <a href="happened2011.html">Vuosi 2011</a></li>
+</ul>
 
 </body>
 
