@@ -3,21 +3,14 @@
 Johdanto
 ========
 
-Tämä sivu pitää sisällään kaiken vaitöskirjaani liittyvän.
-**Projektit**-osiossa olen linkittänyt kaikki artikkeli- ja
-dataprojektit, joista väitöskirjani rakentuu. **Suunnitelmat**-osiossa
-on . **Vuosikertomukset** osiossa taas on vuosien 2011, 2012 ja 2013
-selvitykset.
+Tämä sivu pitää sisällään kaiken vaitöskirjaani liittyvän. Ajankohtaisimmat yleisesityksen projektin tilasta ja tulevaisuudesta löytyvät kohdista [vuosikertomus 2013](happened2013.md) ja [suunnitelma 2014](plan2013.md). Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän sivun alaosasta.
 
-- huonomuistisuus - versionhallinta
-- uuden datan aika - joustavat työkalut
-- 
-
-
-
+Suunnitelmien ja kertomusten lisäksi olen koonnut tälle sivulle kaikki väitöstutkimukseni kannalta tärkeimmät projektit. Käytän nykyään [git](http://fi.wikipedia.org/wiki/Git)-[versionhallintaa](http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control) kaikissa tutkimusprojekteissani ja sen mahdollistamana olen jakanut [GitHub](https://github.com/muuankarski):iin myös yksin tekemäni projektit. Näin esim. ohjaajilla on mahdollisuus seurata reaaliajassa tekemistäni ilman että siitä aiheutuu minulle mitään lisävaivaa.
 
 Projektit
 ---------
+
+Alla oleviin taulukoihin oli jäsennellyt ja linkittänyt kaikki väitöskirjatutkimuksen ja oman ammatillisen osaamiseni kannalta tärkeimmät projektit. Ne jakautuvat *artikkelivedoksiin*, *data- ja metodiprojekteihin* sekä *muihin ammatillisiin kirjoitusprojekteihin*.
 
 ### Artikkelivedokset
 
@@ -25,16 +18,26 @@ Projektit
 
 | Name | Type | link |
 | ---- | ---- | ---- |
-| Attributions for poverty in Post-Socialist countries | Article draft with Mikko | [github](http://muuankarski.github.io/attributions/) |
-| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) |
-| At the origins of post-socialist poverty - spells of multidimensional poverty | Article draft | [github](http://muuankarski.github.io/temporal/) |
+| Attributions for poverty in Post-Socialist countries | Article draft with Mikko that **will be part of thesis** | [github](http://muuankarski.github.io/attributions/) |
+| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe that **probably will NOT be part of thesis** | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) |
+| European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/deprivation/) |
 
 #### Russian spesific
 
 | Name | Type | link |
 | ---- | ---- | ---- |
-| Monetisation of l'goty | Article draft | [github](http://muuankarski.github.io/monetisation/) |
-| Geographies of deprivation in Russian Federation  | Description here | [github](https://github.com/muuankarski/geographies) |
+| Monetisation of l'goty | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/monetisation/) |
+| Geographies of deprivation in Russian Federation  | Article draft that **will be part of thesis** | [github](https://github.com/muuankarski/geographies) |
+| Modernisation and Russian Welfare regime | Article draft with Markku Kivinen, Meri Kulmala and Jouko Nikula for [Demokratizatsiya: The Journal of Post-Soviet Democratization](http://www.metapress.com/content/122625/?p=c4ba001b0a7d425585532b911e01c1b0&pi=2). **Probably will NOT be part of thesis** | No project running yet. |
+
+#### Ones that have not taken off
+
+| Name | Why not | link |
+| ---- | ---- | ---- |
+| WHO GETS WHAT - AND WHERE: Regional poverty outcomes of social assistance in enlarged EU: The case of Poland and Austria  | Has been pending useless availability of regionally aggregated data both in LIS and EU-silc | [github](http://muuankarski.github.io/regional2013/) |
+| Social cash benefits and poverty spells in post-soviet Russia | This was replaced by the **monetisation article** above. Some longitudinal work should be done using RLMS some time.. | [abstract](pending/pending.html) |
+
+
 
 ### Data ja metodiprojektit
 
@@ -67,24 +70,31 @@ Projektit
 Suunnitelmat
 ============
 
--   [Vuodelle 2014](plan2014.html)
--   [Vuodelle 2013](plan2013.html)
--   [Vuodelle 2012](plan2012.html)
--   [Vuodelle 2011](plan2011.html)
--   [Alkuperäinen](plan2010.html)
+-   [Suunnitelma vuodelle 2014](plan2014.html)
+-   [Suunnitelma vuodelle 2013](plan2013.html)
+-   [Suunnitelma vuodelle 2012](plan2012.html)
+-   [Alkuperäinen suunnitelma](plan2010.html)
 
 Vuosikertomukset
 ================
 
--   [Vuosi 2013](happened2013.html)
--   [Vuosi 2012](happened2012.html)
--   [Vuosi 2011](happened2011.html)
-
+-   [Tapahtunutta vuonna 2013](happened2013.html)
+-   [Tapahtunutta vuonna 2012](happened2012.html)
+-   [Tapahtunutta vuonna 2011](happened2011.html)
 
 
 Yhteenvetoartikkeli
 ================
 
-Tänne olen alkanut hahmottelemaan väitöskirjan yhteenvetoartikkelia.
+**Poverty, place and income redistribution - Analysis of poverty dynamics and welfare state development in post-socialist transition**
 
-- huonomuistisuus
+*Summary article will be a lean and short introduction to my research project. It will provide an overarching conceptual and methodological frame for the individual articles and precisely speak out the contribution of the overall thesis and the individual articles.*
+
+**Evolution**
+
+| Conference | Date | Paper |
+| ---------- | ---- | ----- |
+| **Current state** | Feb 2013 | [Disposition](summary/summary.html)
+
+
+

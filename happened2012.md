@@ -1,3 +1,5 @@
+- [..back to index](index.html)
+
 # Vuosi 2012
 
 Vuoden 2011 selvitys löytyy täältä: [researchplan2012_Kainu.pdf](plan2012_Kainu.pdf). Siellä on melko laaja kuvaus siitä matkasta niin teoreettisesti kuin metogdologisesti jonka koin tehneeni tutkimukseni kahtena ensimmäisenä vuotena. Tässä tekstissä paneudutaan viimeisen vuoden aikana tapahtuneisiin asioihin.
@@ -65,32 +67,6 @@ Joulun aikana kokosin ja kirjoitin puhtaaksi omia r-skriptejä, joita olen käyt
 Muuttuvien tutkimuskysymysten ja -aineistojen ohella olen kokenut nykyaikaisiin ja avoimen lähdekoodin analyysimenetelmiin perehtymisen tärkeänä myös oman riippumattomuuden ja toimeentulon kannalta. Pitäisin hyvin hankala tilannetta, jossa vuosien työllä hankkimani analyyttiset taidot olisivat käytössäni vain jos työnantajani suostuisi ostamaan kyseisen ohjelmiston, tai joutuisin ostamaan sen vuosittain omalla rahalla. Valtavirran kaupallisten analyysiohjelmistojen akateemiset lisenssit myös kieltävät ohjelmiston käytön ei-akateemiseen työhön, jota osa työstäni väistämättä tulee jatkossa olemaan.
 
 Tässä sivussa olen luonut pelkkiin avoimen lähdekoodin ohjelmiin perustuvan analyysi- ja julkaisuympäristyön linux-käyttöjärjestelmälle.
-
-## Tulevaa
-
-Tämä alkanut vuosi on väitöskirjaprojektin neljäs ja nykyrahoituksella viimeinen vuosi. Aikataulu on erittäin haastava projektin loppuunsaattamiselle. Tänä vuonna keskityn meneillään olevien papereiden valmiiksi kirjoittamiseen ja julkaisemiseen.
-
-### Tutkimusprojektit
-
-Tulevana vuotena pyrin valikoimaan tarkasti mihin projekteihin osallistun, jotta pystyn keskittymään väitöskirjatyöhöni täysipainoisesti. Vahvasti omaan substanssiin ja menetelmäosaamiseen perustuvista projekteista olen kiinnostunut.
-
-#### Venäjän modernisaation valinnat -huippuyksikkö
-
-Eurooppaa ja Itä-Eurooppaa käsittelevät tutkimukseni tulen tekemään yksin, mutta Venäjää käsittelevissä tutkimuksissa etenen yhteistyössä instituutin [Venäjän modernisaation valinnat](www.helsinki.fi/aleksanteri/crm/) -huippuyksikön [Welfere regime-klusterin](www.helsinki.fi/aleksanteri/crm/clusters.html) tutkijaryhmän kanssa. Jatkamme syksyllä aloittamaamme kahden viikon välein kokoontuvaa teorialukupiiriä, jonka puitteissa luomme yhteistä teoreettista viitekehystä Venäjän hyvinvointivaltiokehityksen tarkasteluun. Tämän vuoden kuluessa aloitamme myös aineiston keruun Togliattin tapaustutkimuksen osalta ja jatkan mittavaa urakkaani Venäjää käsittelevien tutkimusaineistojen sekä tilastoaineistojen käyttöönoton ja analysoinnin osalta. (ks. lisää [data centre](http://rustfare.tumblr.com/datacentre) -hanke). Data centre -hankkeeseen olen aloittamssa yhteistyötä [Louhos-projektin](http://louhos.github.com/) 
-
-#### Russia’s Fragmented Welfare State
-
-Yksi esimerkki meneillään olevista projekteista, jotka liittyvät omaan tutkimusalaani on Brownin yliopiston valtio-opin professori [Linda Cookin](http://www.brown.edu/Departments/Political_Science/faculty/facultypage.php?id=1106970252) hanke **Russia’s Fragmented Welfare State**. Oma osuuteni tosin käsittää vain tiedonhankintaa ja analysointia.
-
-### Tutkimusrahoitus
-
-Oma rahoitus ja toimeentulo on toisinaan mielessä. Instituutin tutkijakoulun rahoitus päättyy osaltani tämän vuoden lopussa. Ainoa konkreettinen toimi jatkorahoituksen hakemiseen on ollut ERC:n Advanced Grant -hakemus, jonka läpimenosta ei tietenkään ole mitään takeita. Epävarmuus toimeentulosta näyttää voimistuneen väitöskirjantekijöiden kanssa. Jatkorahoitusmahdollisuudet ovat kaventuneet, säätiöiden apurahojen hakijamäärät ovat kasvaneet, eikä työpaikkoja ole yhtään aikaisempaa enempää. 
-
-Omalta osaltani olen pyrkinyt vähentämään rahoitushuolia juuri hankkimalla sellaista analyyttistä osaamista, jolla on markkina-arvoa myös tutkimuksen akateemisen ulkopuolella. Lähtökohtaisesti ajatus keikkatöiden tekemisestä akateemisen työn rahoittamiseksi ei kuitenkaan houkuttele, olkoonkin ettei sekään ole poissuljettu vaihtoehto.
-
-## Mitä tarvitsen ohjaajalta
-
-Ohjaajalta tarvitsisin nyt näkemyksiä sekä 1) erillisten artikkeliaihioiden kehittämiseen että 2) väitöskirjan kokonaisuuden hahmottamiseen.
 
 
 ## Lähdekirjallisuus
