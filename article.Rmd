@@ -1,6 +1,0 @@
-| [Etusivu](index.html) | [Tilannekatsaus](current.html) | [Artikkeliaihiot](article.html) | [Tutkimussuunnitelmat](plan.html) |
-
-# Artikkelit
-
-
-
