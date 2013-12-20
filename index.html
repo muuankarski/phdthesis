@@ -174,7 +174,7 @@ h2 {
 	letter-spacing: 0.05em;
 	word-spacing: .1em;
 	border-bottom: 0.5px dashed #555;
-	text-transform:capitalize;
+/*	text-transform:capitalize;*/
 
 }
 h3 {
@@ -312,7 +312,7 @@ th:last-child {
 <ul>
 <li>
 <a href="#toc_0">Johdanto</a>
-<ul>
+</li>
 <li>
 <a href="#toc_1">Projektit</a>
 <ul>
@@ -346,8 +346,6 @@ th:last-child {
 </li>
 </ul>
 </li>
-</ul>
-</li>
 <li>
 <a href="#toc_10">Vuosikertomukset ja suunnitelmat</a>
 </li>
@@ -362,19 +360,19 @@ th:last-child {
 
 <h1 id="toc_0">Johdanto</h1>
 
-<p>Tämä sivu pitää sisällään kaiken vaitöskirjaani liittyvän. Ajankohtaisimmat yleisesityksen projektin tilasta ja tulevaisuudesta löytyy kohdasta <a href="plan2014.html">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a>. Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän sivun alaosasta.</p>
+<p>Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projektit. Sivujen vasemmassa laidassa on aina ko. sivun sisällysluettelo. Teksti projektin nykytilasta ja lähitulevaisuudesta löytyy kohdasta <a href="plan2014.html">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a>. Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän sivun alaosasta.</p>
 
-<p>Suunnitelmien ja kertomusten lisäksi olen koonnut tälle sivulle väitöstutkimukseni kannalta tärkeimmät projektit. Käytän nykyään <a href="http://fi.wikipedia.org/wiki/Git"><strong>git</strong></a>-<a href="http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control">versionhallintaa</a> kaikissa tutkimusprojekteissani ja sen mahdollistamana olen jakanut myös yksin tekemäni projektit <a href="https://github.com/muuankarski">GitHub</a>:iin. Näin esim. ohjaajilla on mahdollisuus seurata reaaliajassa tekemistäni ilman että siitä aiheutuu minulle mitään lisävaivaa. Tämä vaatii seuraajalta github-tunnuksen luomista ja minun tulee antaa oikeudet yksityisten projektien seuraamiseen. Nykyiset linkit johtavat vain projektin julkisille sivuille, jossa ei näy kun sen hetkinen pinta.</p>
+<p>Tämän sivun linkit vievät projektien ns. julkisille sivuille <a href="https://github.com/">GitHub</a>:ssa. <em>Github</em> on yksi monista <a href="http://fi.wikipedia.org/wiki/Git"><em>git</em></a>-<a href="http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control">versionhallinnan</a> <em>hosting</em>-palveluista, jota käytetään etupäässä avoimen lähdekoodin ohjelmistoprojektien koordinoimiseen. Versionhallinta sopii erinomaisesti myös tutkimusprojekteihin  ja siksi versioin ohjelmistoprojektien ohella myös tutkimusprojektini <em>gitissä</em> ja julkaisen tarpeen mukaan <em>GitHubissa</em>. Tämän sivun linkit johtavat projektien ns. julkisile sivuille ja projektien tarkempi seuraaminen edellyttävät tunnusta Githubissa ja minun valtuutusta. </p>
 
-<h2 id="toc_1">Projektit</h2>
+<h1 id="toc_1">Projektit</h1>
 
 <p>Alla oleviin taulukoihin olen jäsennellyt ja linkittänyt kaikki väitöskirjatutkimuksen ja oman ammatillisen osaamiseni kannalta tärkeimmät projektit. Ensimmäisenä ovat <em>artikkelikäsikirjoitukset</em>, toisena <em>data- ja metodiprojektit</em> ja kolmantena <em>muut ammatilliset kirjoitusprojektit</em>. Kunkin projektin alla on otsikko, lyhyt kuvaus sekä linkki projektin github sivuille. Suljetuissa projekteissa näkyvissä ovat vain ns. julkiset sivut sillä hetkellä, kun taas avoimissa projekteista pääsee suoraan projektikansioon.</p>
 
-<h3 id="toc_2">Artikkelikäsikirjoitukset</h3>
+<h2 id="toc_2">Artikkelikäsikirjoitukset</h2>
 
 <p><em>Artikkelikäsikirjoitukset</em> olen luokitellut <em>vertaileviin</em>, <em>Venäjän tapaustutkimuksiin</em> ja <em>flopanneisiin</em> artikkelikäsikirjoituksiin. </p>
 
-<h4 id="toc_3">Comparative post-socialist</h4>
+<h3 id="toc_3">Comparative post-socialist</h3>
 
 <table><thead>
 <tr>
@@ -400,7 +398,7 @@ th:last-child {
 </tr>
 </tbody></table>
 
-<h4 id="toc_4">Russian spesific</h4>
+<h3 id="toc_4">Russian spesific</h3>
 
 <table><thead>
 <tr>
@@ -426,7 +424,7 @@ th:last-child {
 </tr>
 </tbody></table>
 
-<h4 id="toc_5">Ones that have not taken off</h4>
+<h3 id="toc_5">Ones that have not taken off</h3>
 
 <table><thead>
 <tr>
@@ -447,11 +445,11 @@ th:last-child {
 </tr>
 </tbody></table>
 
-<h3 id="toc_6">Data ja metodiprojektit</h3>
+<h2 id="toc_6">Data ja metodiprojektit</h2>
 
 <p>Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain tutkimuksen tekemisen puitteina, vaan myös menetelmäartikkelin kirjoittamisen aiheena. Yksi artikkeleista tulee käsittelemään kirjoittamaani rustfare-pakettia, jonka avulla on mahdollista käyttää avointa Venäjä-dataa suoraan R-ohjelmistossa. <a href="http://ropengov.github.io/">rOpenGov</a>-projektissa taas meillä on tarkoituksena julkaista myös perinteisiä kanavia pitkin, mutta aikaisintaan syksyllä 2014, riippuen miten saadaan projektiin lisää kv-kehittäjiä mukaan.</p>
 
-<h4 id="toc_7">rOpenGov-projektiin liittyvät</h4>
+<h3 id="toc_7">rOpenGov-projektiin liittyvät</h3>
 
 <table><thead>
 <tr>
@@ -477,7 +475,7 @@ th:last-child {
 </tr>
 </tbody></table>
 
-<h4 id="toc_8">Omat sekalaiset visualisointi/ käyttöliittymäprojektit</h4>
+<h3 id="toc_8">Omat sekalaiset visualisointi/ käyttöliittymäprojektit</h3>
 
 <table><thead>
 <tr>
@@ -503,7 +501,7 @@ th:last-child {
 </tr>
 </tbody></table>
 
-<h3 id="toc_9">Muut ammatilliset kirjoitusprojektit</h3>
+<h2 id="toc_9">Muut ammatilliset kirjoitusprojektit</h2>
 
 <table><thead>
 <tr>

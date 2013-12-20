@@ -3,20 +3,22 @@
 Johdanto
 ========
 
-Tämä sivu pitää sisällään kaiken vaitöskirjaani liittyvän. Ajankohtaisimmat yleisesityksen projektin tilasta ja tulevaisuudesta löytyy kohdasta [Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014](plan2014.html). Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän sivun alaosasta.
+Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projektit. Sivujen vasemmassa laidassa on aina ko. sivun sisällysluettelo. Teksti projektin nykytilasta ja lähitulevaisuudesta löytyy kohdasta [Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014](plan2014.html). Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän sivun alaosasta.
 
-Suunnitelmien ja kertomusten lisäksi olen koonnut tälle sivulle väitöstutkimukseni kannalta tärkeimmät projektit. Käytän nykyään [**git**](http://fi.wikipedia.org/wiki/Git)-[versionhallintaa](http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control) kaikissa tutkimusprojekteissani ja sen mahdollistamana olen jakanut myös yksin tekemäni projektit [GitHub](https://github.com/muuankarski):iin. Näin esim. ohjaajilla on mahdollisuus seurata reaaliajassa tekemistäni ilman että siitä aiheutuu minulle mitään lisävaivaa. Tämä vaatii seuraajalta github-tunnuksen luomista ja minun tulee antaa oikeudet yksityisten projektien seuraamiseen. Nykyiset linkit johtavat vain projektin julkisille sivuille, jossa ei näy kun sen hetkinen pinta.
+Tämän sivun linkit vievät projektien ns. julkisille sivuille [GitHub](https://github.com/):ssa. *Github* on yksi monista [*git*](http://fi.wikipedia.org/wiki/Git)-[versionhallinnan](http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control) *hosting*-palveluista, jota käytetään etupäässä avoimen lähdekoodin ohjelmistoprojektien koordinoimiseen. Versionhallinta sopii erinomaisesti myös tutkimusprojekteihin  ja siksi versioin ohjelmistoprojektien ohella myös tutkimusprojektini *gitissä* ja julkaisen tarpeen mukaan *GitHubissa*. Tämän sivun linkit johtavat projektien ns. julkisile sivuille ja projektien tarkempi seuraaminen edellyttävät tunnusta Githubissa ja minun valtuutusta. 
+
 
 Projektit
----------
+==============
 
 Alla oleviin taulukoihin olen jäsennellyt ja linkittänyt kaikki väitöskirjatutkimuksen ja oman ammatillisen osaamiseni kannalta tärkeimmät projektit. Ensimmäisenä ovat *artikkelikäsikirjoitukset*, toisena *data- ja metodiprojektit* ja kolmantena *muut ammatilliset kirjoitusprojektit*. Kunkin projektin alla on otsikko, lyhyt kuvaus sekä linkki projektin github sivuille. Suljetuissa projekteissa näkyvissä ovat vain ns. julkiset sivut sillä hetkellä, kun taas avoimissa projekteista pääsee suoraan projektikansioon.
 
-### Artikkelikäsikirjoitukset
+Artikkelikäsikirjoitukset
+---------
 
 *Artikkelikäsikirjoitukset* olen luokitellut *vertaileviin*, *Venäjän tapaustutkimuksiin* ja *flopanneisiin* artikkelikäsikirjoituksiin. 
 
-#### Comparative post-socialist
+### Comparative post-socialist
 
 | Title | Type | link |
 | ---- | ---- | ---- |
@@ -24,7 +26,7 @@ Alla oleviin taulukoihin olen jäsennellyt ja linkittänyt kaikki väitöskirjat
 | Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe that **probably will NOT be part of thesis** | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) |
 | European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/deprivation/) |
 
-#### Russian spesific
+### Russian spesific
 
 | Title | Type | link |
 | ---- | ---- | ---- |
@@ -32,7 +34,7 @@ Alla oleviin taulukoihin olen jäsennellyt ja linkittänyt kaikki väitöskirjat
 | Geographies of deprivation in Russian Federation  | Article draft that **will be part of thesis** | [github](https://github.com/muuankarski/geographies) |
 | Modernisation and Russian Welfare regime | Article draft with Markku Kivinen, Meri Kulmala and Jouko Nikula for [Demokratizatsiya: The Journal of Post-Soviet Democratization](http://www.metapress.com/content/122625/?p=c4ba001b0a7d425585532b911e01c1b0&pi=2). **Probably will NOT be part of thesis** | No project running yet. |
 
-#### Ones that have not taken off
+### Ones that have not taken off
 
 | Title | Why not | link |
 | ---- | ---- | ---- |
@@ -40,11 +42,12 @@ Alla oleviin taulukoihin olen jäsennellyt ja linkittänyt kaikki väitöskirjat
 | Social cash benefits and poverty spells in post-soviet Russia | This was replaced by the **monetisation article** above. Some longitudinal work should be done using RLMS some time.. | [abstract](pending/pending.html) |
 
 
-### Data ja metodiprojektit
+Data ja metodiprojektit
+---------
 
 Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain tutkimuksen tekemisen puitteina, vaan myös menetelmäartikkelin kirjoittamisen aiheena. Yksi artikkeleista tulee käsittelemään kirjoittamaani rustfare-pakettia, jonka avulla on mahdollista käyttää avointa Venäjä-dataa suoraan R-ohjelmistossa. [rOpenGov](http://ropengov.github.io/)-projektissa taas meillä on tarkoituksena julkaista myös perinteisiä kanavia pitkin, mutta aikaisintaan syksyllä 2014, riippuen miten saadaan projektiin lisää kv-kehittäjiä mukaan.
 
-#### rOpenGov-projektiin liittyvät
+### rOpenGov-projektiin liittyvät
 
 | Title | Type | link |
 | ---- | ---- | ---- |
@@ -53,7 +56,7 @@ Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain t
 | **rustfare** - Algorithms for Russian data | My own project within rOpenGov | [github](https://github.com/rOpenGov/rustfare) [documentation](http://markuskainu.fi/rustfare/) |
 
 
-#### Omat sekalaiset visualisointi/ käyttöliittymäprojektit
+### Omat sekalaiset visualisointi/ käyttöliittymäprojektit
 
 | Title | Type | link |
 | ---- | ---- | ---- |
@@ -61,7 +64,8 @@ Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain t
 | GoogleVis aka bubble chart visualisation of Rosstat Regional Data | Visualization of Russian regional data for teaching and exploring the data | [github](https://github.com/muuankarski/rusRegionGVis) |
 | Quality of Government Institute data as Motion Charts | Visualization of Quality of government data for teaching and data exploration | [github](https://github.com/muuankarski/QogGVis) |
 
-### Muut ammatilliset kirjoitusprojektit
+Muut ammatilliset kirjoitusprojektit
+---------
 
 | Title | Type |
 | ---- | ---- |
