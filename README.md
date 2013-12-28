@@ -23,7 +23,7 @@ Artikkelikäsikirjoitukset
 | Title | Type | link |
 | ---- | ---- | ---- |
 | Attributions for poverty in Post-Socialist countries | Article draft with Mikko that **will be part of thesis** | [github](http://muuankarski.github.io/attributions/) |
-| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe that **probably will NOT be part of thesis** | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) |
+| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe that **will NOT be part of thesis** | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) |
 | European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/deprivation/) |
 
 ### Russian spesific
