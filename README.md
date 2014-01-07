@@ -20,24 +20,24 @@ Artikkelikäsikirjoitukset
 
 ### Comparative post-socialist
 
-| Title | Type | link |
-| ---- | ---- | ---- |
-| Attributions for poverty in Post-Socialist countries | Article draft with Mikko that **will be part of thesis** | [github](http://muuankarski.github.io/attributions/) |
-| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe that **will NOT be part of thesis** | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) |
-| European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/deprivation/) |
+| Title | Type | Link | Status |
+| ----- | ---- | ---- | ------ |
+| Attributions for poverty in Post-Socialist countries | Article draft with Mikko that **will be part of thesis** | [github](http://muuankarski.github.io/attributions/) | To be submitted in early 2014 |
+| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe that **will NOT be part of thesis** | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) | Submitted in Dec 2013 |
+| European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/deprivation/) | Some work. To be submitted Autumn 2014 |
 
 ### Russian spesific
 
-| Title | Type | link |
-| ---- | ---- | ---- |
-| Targeting performance of monthly cash payments at multidimensional poverty in Russia in 2000 - 2011 | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/monetisation/) |
-| Geographies of deprivation in Russian Federation  | Article draft that **will be part of thesis** | [github](https://github.com/muuankarski/geographies) |
-| Modernisation and Russian Welfare regime | Article draft with Markku Kivinen, Meri Kulmala and Jouko Nikula for [Demokratizatsiya: The Journal of Post-Soviet Democratization](http://www.metapress.com/content/122625/?p=c4ba001b0a7d425585532b911e01c1b0&pi=2). **Probably will NOT be part of thesis** | No project running yet. |
+| Title | Type | Link | Status |
+| ----- | ---- | ---- | ------ |
+| Targeting performance of monthly cash payments at multidimensional poverty in Russia in 2000 - 2011 | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/monetisation/) | Lots of work. To be submitted in late 2014 |
+| Geographies of deprivation in Russian Federation  | Article draft that **will be part of thesis** | [github](https://github.com/muuankarski/geographies) | Lots of work. To be submitted in late 2014 |
+| Modernisation and Russian Welfare regime | Article draft with Markku Kivinen, Meri Kulmala and Jouko Nikula for [Demokratizatsiya: The Journal of Post-Soviet Democratization](http://www.metapress.com/content/122625/?p=c4ba001b0a7d425585532b911e01c1b0&pi=2). **will NOT be part of thesis** | No project running yet. | To be submitted in late spring 2014 |
 
 ### Ones that have not taken off
 
 | Title | Why not | link |
-| ---- | ---- | ---- |
+| ----- | ------- | ---- |
 | WHO GETS WHAT - AND WHERE: Regional poverty outcomes of social assistance in enlarged EU: The case of Poland and Austria  | Has been pending useless availability of regionally aggregated data both in LIS and EU-silc | [github](http://muuankarski.github.io/regional2013/) |
 | Social cash benefits and poverty spells in post-soviet Russia | This was replaced by the **monetisation article** above. Some longitudinal work should be done using RLMS some time.. | [abstract](pending/pending.html) |
 
