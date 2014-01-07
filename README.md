@@ -3,10 +3,9 @@
 Johdanto
 ========
 
-Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projektit. Sivujen vasemmassa laidassa on aina ko. sivun sisällysluettelo. Teksti projektin nykytilasta ja lähitulevaisuudesta löytyy kohdasta [Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014](plan2014.html). Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän sivun alaosasta.
+Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projektit. Sivujen vasemmassa laidassa on aina ko. sivun sisällysluettelo. Kuvaus projektin nykytilasta ja lähitulevaisuudesta löytyy kohdasta [Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014](plan2014.html). Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän [sivun alaosasta](#toc_10).
 
-Tämän sivun linkit vievät projektien ns. julkisille sivuille [GitHub](https://github.com/):ssa. *Github* on yksi monista [*git*](http://fi.wikipedia.org/wiki/Git)-[versionhallinnan](http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control) *hosting*-palveluista, jota käytetään etupäässä avoimen lähdekoodin ohjelmistoprojektien koordinoimiseen. Versionhallinta sopii erinomaisesti myös tutkimusprojekteihin  ja siksi versioin ohjelmistoprojektien ohella myös tutkimusprojektini *gitissä* ja julkaisen tarpeen mukaan *GitHubissa*. Tämän sivun linkit johtavat projektien ns. julkisile sivuille ja projektien tarkempi seuraaminen edellyttävät tunnusta Githubissa ja minun valtuutusta. 
-
+Tämän sivun linkit johtavat projektieni sivuille [GitHub](https://github.com/):ssa. *Github* on yksi monista [*git*](http://fi.wikipedia.org/wiki/Git)-[versionhallinnan](http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control) *hosting*-palveluista. Github:ia käytetään etupäässä avoimen lähdekoodin ohjelmistoprojekteissa, mutta yhä enemmän myös akateemisten tutkimusprojektien alustana. Itse pidän kirjaa tekstieni ja analyysieni versiohistoriasta *git*:n avulla ja julkaisen versiohistoriat etenkin yhteistyöprojekteissa *GitHubissa*. Tämän sivun linkit johtavat projektien ns. *julkisille sivuille*, joista ei pääse ilman tunnuksia ja minun valtuutusta katsomaan itse tutkimuksen etenemistä. Sitten itse asiaan.
 
 Projektit
 ==============
@@ -45,13 +44,13 @@ Artikkelikäsikirjoitukset
 Data ja metodiprojektit
 ---------
 
-Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain tutkimuksen tekemisen puitteina, vaan myös menetelmäartikkelin kirjoittamisen aiheena. Yksi artikkeleista tulee käsittelemään kirjoittamaani rustfare-pakettia, jonka avulla on mahdollista käyttää avointa Venäjä-dataa suoraan R-ohjelmistossa. [rOpenGov](http://ropengov.github.io/)-projektissa taas meillä on tarkoituksena julkaista myös perinteisiä kanavia pitkin, mutta aikaisintaan syksyllä 2014, riippuen miten saadaan projektiin lisää kv-kehittäjiä mukaan.
+Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain tutkimuksen tekemisen puitteina, vaan myös menetelmäartikkelin kirjoittamisen aiheena. Yksi artikkeleista tulee käsittelemään kirjoittamaani rustfare-pakettia, jonka avulla on mahdollista käyttää avointa Venäjä-dataa suoraan R-ohjelmistossa. [rOpenGov](http://ropengov.github.io/)-projektissa taas meillä on tarkoituksena julkaista myös perinteisiä kanavia pitkin, mutta aikaisintaan syksyllä 2014, riippuen miten saamme projektiin lisää kv-kehittäjiä ja muita yhteistyötahoja (ja rahaa) mukaan.
 
 ### rOpenGov-projektiin liittyvät
 
 | Title | Type | link |
 | ---- | ---- | ---- |
-|**rOpenGov** - R Ecosystem for Open Government Data and Computational Social Science | A joint project of many developers internationally | [github](http://ropengov.github.io/) |
+|**rOpenGov** - R Ecosystem for Open Government Data and Computational Social Science | A joint project of many developers internationally | [github - website](http://ropengov.github.io/) [github - code base](https://github.com/rOpenGov) |
 | **rQog** - Search, extract and format data from the Quality of Government Institute data |   Simple, targeted library for QoG-database | [github](https://github.com/muuankarski/rQog) [documentation](http://markuskainu.fi/rqog/) |
 | **rustfare** - Algorithms for Russian data | My own project within rOpenGov | [github](https://github.com/rOpenGov/rustfare) [documentation](http://markuskainu.fi/rustfare/) |
 
