@@ -22,7 +22,7 @@ Artikkelikäsikirjoitukset
 | Title | Type | Link | Status |
 | ----- | ---- | ---- | ------ |
 | Attributions for poverty in Post-Socialist countries | Article draft with Mikko that **will be part of thesis** | [github](http://muuankarski.github.io/attributions/) | To be submitted in early 2014 |
-| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe that **will NOT be part of thesis** | Article draft with Olli and Joakim | [github](http://muuankarski.github.io/exitentry/) | Submitted in Dec 2013 |
+| Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe | Article draft with Olli Kangas & Joakim Palme **will NOT be part of thesis** | [github](http://muuankarski.github.io/exitentry/) | Submitted in Dec 2013 |
 | European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries | Article draft that **will be part of thesis** | [github](http://muuankarski.github.io/deprivation/) | Some work. To be submitted Autumn 2014 |
 
 ### Russian spesific
@@ -80,6 +80,30 @@ Vuosikertomukset ja suunnitelmat
 -   [Happened in 2010-2011 and Research plan for years 2012-2013](plan2012.html)
 -   [Alkuperäinen suunnitelma](plan2010.html)
 
+Opintosuoritukset
+================
+
+| Suoritus | Pisteet | Linkki tapahtumaan | Paperin otsikko |
+| -------- | ------- | ------------------ | --------------- |
+| **Vuosi 2010**                                        | | |
+| Kv-konferenssi | 5 | [Seventeenth International Research Seminar on ‘Issues in Social Security’: The Global Crisis : Impact and Challenges for Social Security - Sigtuna, Sweden, 16-18 June 2010](http://webh01.ua.ac.be/csb/fiss/?page_id=53) | *Cross-sectional profile of poverty and inequality outcomes of income redistribution schemes in European post-socialist countries*) |
+| Kv-konferenssi | 5 | [ 8th ESPAnet Conference 2010 Social Policy and the Global Crisis: Consequences and Responses](http://tatk.elte.hu/news-english/1398-espanet-2010-annual-conference) | *Attributions for Poverty in European Post Socialist Countries*|
+| FISS | 5 | [FISS](Conference) | [Title of the paper]() |
+| FISS | 5 | [FISS](Conference) | [Title of the paper]() |
+| **Vuosi 2011**                                        | | |
+| Kv-konferenssi | 5 | [ 18th International Research Seminar on Issues in Social Security, June 10, 2011. Foundation for International Studies on Social Security.](http://webh01.ua.ac.be/csb/fiss/?page_id=48) | *WHO GETS WHAT - AND WHERE? Regional poverty outcomes of social assistance in enlarged EU* |
+| FISS | 5 | [FISS](Conference) | paper |
+| FISS | 5 | [FISS](Conference) | paper |
+| FISS | 5 | [FISS](Conference) | paper |
+| **Vuosi 2012**                                        | | |
+| FISS | 5 | [FISS](Conference) | paper |
+| **Vuosi 2013**                                        | | |
+| FISS | 5 | [FISS](Conference) | paper |
+| FISS | 5 | [FISS](Conference) | paper |
+| **Vuosi 2014**                                        | | |
+| FISS | 5 | [FISS](Conference) | paper |
+| FISS | 5 | [FISS](Conference) | paper |
+| **Ýhteensä** | **100** | | |
 
 Yhteenvetoartikkeli
 ================
