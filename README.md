@@ -66,10 +66,10 @@ Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain t
 Muut ammatilliset kirjoitusprojektit
 ---------
 
-| Title | Type |
-| ---- | ---- |
-| Kainu, Markus, & Niemelä, Mikko. Taloudelliset elinolot ja elämänvaiheet Euroopassa. In Eurooppalaiset elinolot (Forthcoming), edited by Mikko Niemelä. Helsinki: Kansaneläkelaitos, 2014. (Accepted) | Johdanto-luku kirjaan |
-| Kainu, Markus. 2014. R-language for computational analysis in social and humanitarian sciences | Luku Jessica Parland.von Essenin ja Kenneth Nybergin toimittamaan [Historia i en digital värld](http://digihist.se/)-kirjaan |
+| Title | Type | Link | Status |
+| ---- | ---- | --- | ----- |
+| Kainu, Markus, & Niemelä, Mikko. Taloudelliset elinolot ja elämänvaiheet Euroopassa. In Eurooppalaiset elinolot (Forthcoming), edited by Mikko Niemelä. Helsinki: Kansaneläkelaitos, 2014. | Johdanto-luku kirjaan | | Accepted |
+| Kainu, Markus. 2014. Open research methods in computational social sciences and humanities: introducing R | Luku Jessica Parland.von Essenin ja Kenneth Nybergin toimittamaan [Historia i en digital värld](http://digihist.se/)-kirjaan | [github](https://github.com/muuankarski/rlang) | eka versio submitattu |
 
 
 Vuosikertomukset ja suunnitelmat
