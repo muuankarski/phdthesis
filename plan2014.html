@@ -1,403 +1,418 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="finnish" xml:lang="finnish">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<title>Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</title>
-
-
-
-
-
-<style type="text/css">
-<style>
-
--something { /* Just to escape the effect of html tag above in pandoc*/
-
-}
-
-.title /* Pandoc title header (h1.title) */
-    {
-    	text-align: center;
-	border-width:0px;
-	font-size: 1.5em;
-	margin: 0 0 5px 0;
-	word-spacing: .1em;
-	border-bottom: 0px;
-    }
-
-.author /* Pandoc author(s) header (h2.author) */
-    {
-    text-align: center;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    border-bottom: 0px;
-    }
-
-.date /* Pandoc date header (h3.date) */
-    {
-	font-family:  Avant Garde, Arial;
-	text-align: center;
-	font-size: 1.1em;
-	line-height: 1.2em;
-    }
-
-
-body {
-    margin-left: 240px;
-    max-width:600px; 
-    border: 0px;
-    font-family: Palatino, Helvetica, sans-serif;
-}
-
-
-#toc {
-    font-size:0.9em;
-    height: 100%;
-    position: fixed; 
-    width: 220px;
-    left: 5px;
-    padding-top: 20px;
-    color: #003333;
-    border-right: 1px dashed #C1C1C1;
-}
-
-#toc_header {
-    font-size: 1em;
-    font-weight: bold;    
-    border-bottom: 1px dashed #C1C1C1;
-    color: black;
-}
-
-
-
-#toc li {
-    padding: 2px 4px;
-    margin-left: 2px;
-}
-
-
-#toc a {
-    color: #003333;
-    display: block;
-}
-
-
-
-blockquote {
-	padding-left: .5em; 
-    border-left: 2px solid #C1C1C1;
-	font-style: italic;
-}
-
-
-pre {	
-   margin-top: 0;
-   max-width: 95%;
-   border: 1px dashed #ccc;
-   white-space: pre-wrap;
-   font-size:1.0em;
-    background: #FFFFFF;
-}
-
-pre code {
-   display: block; 
-   padding: 0.2em;
-   font-size:1.0em;
-}
-
-code.r, code.cpp {
-   background-color: #ECEEF0;
-}
-
-
-
-ul {
-	font-size: 100% !important;
-	font-family: Palatino, Helvetica, sans-serif;
-}
-li {
-	font-family: Palatino, Helvetica, sans-serif;
- 	font-size: 1em;
- 	line-height: 1.1em;
-}
-
-
-p {
-	font-family: Palatino, Helvetica, sans-serif;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	font-size: 1em;
-	line-height: 1.2em;
-}
-ol {
-	list-style: decimal outside;
-	list-style-type: decimal;
-	float: none;
-	margin: .5em 0 .5em 30px;
-	padding: 0;
-}
-ul {
-	margin: .2em 0 .2em 10px;
-	padding: 0;
-}
-UL li, ol li {
-	line-height: 1.1em;
-	padding: 2px;
-}
-a:link {
-	color: #657b83;
-   /* text-decoration: none; */
-}
-a:hover {
-	color: #657b83;
-}
-a:visited {
-	color: #657b83;
-}
-a:focus {
-	color: #657b83;
-}
-a:active {
-	color: #657b83;
-}
-
-h1 {
-	font-family:  Avant Garde, Arial;
-	font-size: 1.3em;
-	padding: 2px;
-	line-height: 1.3em;
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Markus Kainu" />
+  <title>Väitöskirjaprojektin yhteenveto</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style>
+  
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
     font-weight: 400;
-	/*letter-spacing: 0.06em;
-	word-spacing: .1em;*/
-    border-bottom: 0.5px solid #657b83;
-	text-transform:uppercase;
-    color: #657b83;
-}
-h2 {
-	font-family:  Avant Garde, Arial;
-	font-size: 1.1em;
-	padding: 2px;
-	line-height: 1.1em;
-    font-weight: 300;
-	letter-spacing: 0.05em;
-	word-spacing: .1em;
-	border-bottom: 0.5px dashed #657b83;
-/*	text-transform:capitalize;*/
-    color: #657b83;
-
-}
-h3 {
-	font-family:  Avant Garde, Arial;
-	font-size: 1.1em;
-	padding: 2px;
-	line-height: 1.1em;
-    font-weight: 300;
-	letter-spacing: 0.05em;
-	word-spacing: .1em;
-    color: #657b83;
-
-}
-h4 {
-	font-family: Avant Garde;
-	font-size: 1.0em;
-	padding: 2px;
-	line-height: 1.0em;
-	color: #555;
-	font-weight: italic;
-    color: #657b83;
-}
-h5 {
-	font-family: Avant Garde;
-	font-size: 1.05em;
-	padding: 2px;
-	line-height: 1.15em;
-	color: #555;
-	font-weight: normal;
-    color: #657b83;
-}
-h6 {
-	font-family: Avant Garde;
-	font-size: 1em;
-	padding: 2px;
-	line-height: 1.1em;
-	color: #555;
-	font-weight: normal;
-    color: #657b83;
-}
-p.caption, table caption, caption{
-    margin-top:0em;
-    padding:2px;
-    font-weight: 600;
-    font-size:1.0em;
-    text-align:left;
-    color: #657b83;
-}
-
-/* table styles */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-    line-height: 1.4em;
-	font-size: 0.9em;
-	/*font-family: monospace;*/
-
-}
-.views-table, table {
-	margin-left: 2px;
-	margin-bottom: 10px;
-	/*width: 1300px;*/
-}
-tr {
-	line-height: 1.2em;
-	border-bottom: #9e9e9e thin solid;
-}
-tr:last-child {
-	line-height: 1.2em;
-}
-th {
-	margin: 5px 0 5px 0;
-	padding: 0 5px 0 5px;
-/*	border-right: #9e9e9e thin solid; */
-	text-align: left;
-	border-bottom: #9e9e9e thin solid;
-}
-th:last-child {
-	margin: 5px 0 5px 0;
-	padding: 0 5px 0 5px;
-/*	border-right: #9e9e9e thin solid; */
-	text-align: left;
-}
-th:first-child {
-	margin: 5px 0 5px 0;
-	padding: 0 5px 0 5px;
-/*	border: #9e9e9e thin solid; */
-}
-tbody tr {
-	line-height: 1.2em;
-/*	border-left: #9e9e9e thin solid; */
-}
-tbody tr:nth-child(odd) {
-	line-height: 1.2em;
-	background-color: #F3F5F5;
-}
-td {
-	padding: 0 5px 0 5px;
-/*	border-right: #9e9e9e thin solid; */
-}
-td:last-child {
-	padding: 0 5px 0 5px;
-}
-DL {
-	margin: .3em 0 .3em 0;
-}
-DT {
-	margin: .3em 0 .3em 0;
-}
-DD {
-	line-height: 1.5em;
-	list-style: none;
-	margin: .7em 0 .7em 2em;
-}
-td.active {
-	background-color: transparent!important;
-}
-tr:last-child {
-	border-bottom: #9e9e9e thin solid;
-}
-tr:first-child {
-	border-top: #9e9e9e thin solid;
-}
-th:last-child {
-/*	border-left: #9e9e9e thin solid; */
-}
-th:last-child {
-	/*border-right: #9e9e9e thin solid;*/
-}
-</style>
-</style>
-
-
-
+    src: local('Lato Regular'), local('Lato-Regular'), url(fonts/Lato.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(fonts/LatoBold.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(fonts/LatoBlack.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'), url(fonts/LatoItalic.woff) format('woff');
+  }
+  
+  
+  -something { /* Just to escape the effect of html tag above in pandoc*/
+  
+  }
+  
+  .title /* Pandoc title header (h1.title) */
+      {
+      	text-align: center;
+  	border-width:0px;
+  	font-size: 1.5em;
+  	margin: 0 0 5px 0;
+  	word-spacing: .1em;
+  	border-bottom: 0px;
+      }
+  
+  .author /* Pandoc author(s) header (h2.author) */
+      {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      border-bottom: 0px;
+      }
+  
+  .date /* Pandoc date header (h3.date) */
+      {
+  	font-family:  Lato, Arial;
+  	text-align: center;
+  	font-size: 1.1em;
+  	line-height: 1.2em;
+      }
+  
+  
+  body {
+      margin-left: 240px;
+      max-width:600px; 
+      border: 0px;
+      font-family: Lato, Helvetica, sans-serif;
+  }
+  
+  
+  #toc {
+      font-size:0.9em;
+      height: 100%;
+      position: fixed; 
+      width: 220px;
+      left: 5px;
+      padding-top: 20px;
+      color: #003333;
+      border-right: 1px dashed #C1C1C1;
+  }
+  
+  #toc_header {
+      font-size: 1em;
+      font-weight: bold;    
+      border-bottom: 1px dashed #C1C1C1;
+      color: black;
+  }
+  
+  
+  
+  #TOC li {
+      padding: 2px 4px;
+      margin-left: 2px;
+  }
+  
+  
+  #TOC a {
+      color: #003333;
+      display: block;
+  }
+  
+  
+  #TOC {
+      font-size:0.9em;
+      height: 100%;
+      position: fixed; 
+      width: 220px;
+      left: 5px;
+      padding-top: 20px;
+      color: #003333;
+      border-right: 1px dashed #C1C1C1;
+  }
+  
+  #TOC_HEADER {
+      font-size: 1em;
+      font-weight: bold;    
+      border-bottom: 1px dashed #C1C1C1;
+      color: black;
+  }
+  
+  
+  
+  #TOC li {
+      padding: 2px 4px;
+      margin-left: 2px;
+  }
+  
+  
+  #TOC a {
+      color: #003333;
+      display: block;
+  }
+  
+  
+  blockquote {
+  	padding-left: .5em; 
+      border-left: 2px solid #C1C1C1;
+  	font-style: italic;
+  }
+  
+  
+  pre {	
+     margin-top: 0;
+     max-width: 95%;
+     border: 1px dashed #ccc;
+     white-space: pre-wrap;
+     font-size:1.0em;
+      background: #FFFFFF;
+  }
+  
+  pre code {
+     display: block; 
+     padding: 0.2em;
+     font-size:1.0em;
+  }
+  
+  code.r, code.cpp {
+     background-color: #ECEEF0;
+  }
+  
+  
+  
+  ul {
+  	font-size: 100% !important;
+  	font-family: Lato, Helvetica, sans-serif;
+  }
+  li {
+  	font-family: Lato, Helvetica, sans-serif;
+   	font-size: 1em;
+   	line-height: 1.1em;
+  }
+  
+  
+  p {
+  	font-family: Lato, Helvetica, sans-serif;
+  	padding-top: 2px;
+  	padding-bottom: 2px;
+  	font-size: 1em;
+  	line-height: 1.2em;
+  }
+  ol {
+  	list-style: decimal outside;
+  	list-style-type: decimal;
+  	float: none;
+  	margin: .5em 0 .5em 30px;
+  	padding: 0;
+  }
+  ul {
+  	margin: .2em 0 .2em 10px;
+  	padding: 0;
+  }
+  UL li, ol li {
+  	line-height: 1.1em;
+  	padding: 2px;
+  }
+  a:link {
+  	color: #657b83;
+     /* text-decoration: none; */
+  }
+  a:hover {
+  	color: #657b83;
+  }
+  a:visited {
+  	color: #657b83;
+  }
+  a:focus {
+  	color: #657b83;
+  }
+  a:active {
+  	color: #657b83;
+  }
+  
+  h1 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.3em;
+  	padding: 2px;
+  	line-height: 1.3em;
+      font-weight: 400;
+  	/*letter-spacing: 0.06em;
+  	word-spacing: .1em;*/
+      border-bottom: 0.5px solid #657b83;
+  	text-transform:uppercase;
+      color: #657b83;
+  }
+  h2 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+      font-weight: 300;
+  	letter-spacing: 0.05em;
+  	word-spacing: .1em;
+  	border-bottom: 0.5px dashed #657b83;
+  /*	text-transform:capitalize;*/
+      color: #657b83;
+  
+  }
+  h3 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+      font-weight: 300;
+  	letter-spacing: 0.05em;
+  	word-spacing: .1em;
+      color: #657b83;
+  
+  }
+  h4 {
+  	font-family: Lato;
+  	font-size: 1.0em;
+  	padding: 2px;
+  	line-height: 1.0em;
+  	color: #555;
+  	font-weight: italic;
+      color: #657b83;
+  }
+  h5 {
+  	font-family: Avant Garde;
+  	font-size: 1.05em;
+  	padding: 2px;
+  	line-height: 1.15em;
+  	color: #555;
+  	font-weight: normal;
+      color: #657b83;
+  }
+  h6 {
+  	font-family: Lato;
+  	font-size: 1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+  	color: #555;
+  	font-weight: normal;
+      color: #657b83;
+  }
+  p.caption, table caption, caption{
+      margin-top:0em;
+      padding:2px;
+      font-weight: 600;
+      font-size:1.0em;
+      text-align:left;
+      color: #657b83;
+  }
+  
+  /* table styles */
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+      line-height: 1.4em;
+  	font-size: 0.9em;
+  	/*font-family: monospace;*/
+  
+  }
+  .views-table, table {
+  	margin-left: 2px;
+  	margin-bottom: 10px;
+  	/*width: 1300px;*/
+  }
+  tr {
+  	line-height: 1.2em;
+  	border-bottom: #9e9e9e thin solid;
+  }
+  tr:last-child {
+  	line-height: 1.2em;
+  }
+  th {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  	text-align: left;
+  	border-bottom: #9e9e9e thin solid;
+  }
+  th:last-child {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  	text-align: left;
+  }
+  th:first-child {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border: #9e9e9e thin solid; */
+  }
+  tbody tr {
+  	line-height: 1.2em;
+  /*	border-left: #9e9e9e thin solid; */
+  }
+  tbody tr:nth-child(odd) {
+  	line-height: 1.2em;
+  	background-color: #F3F5F5;
+  }
+  td {
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  }
+  td:last-child {
+  	padding: 0 5px 0 5px;
+  }
+  DL {
+  	margin: .3em 0 .3em 0;
+  }
+  DT {
+  	margin: .3em 0 .3em 0;
+  }
+  DD {
+  	line-height: 1.5em;
+  	list-style: none;
+  	margin: .7em 0 .7em 2em;
+  }
+  td.active {
+  	background-color: transparent!important;
+  }
+  tr:last-child {
+  	border-bottom: #9e9e9e thin solid;
+  }
+  tr:first-child {
+  	border-top: #9e9e9e thin solid;
+  }
+  th:last-child {
+  /*	border-left: #9e9e9e thin solid; */
+  }
+  th:last-child {
+  	/*border-right: #9e9e9e thin solid;*/
+  }
+  </style>
 </head>
-
 <body>
-<div id="toc">
-<div id="toc_header">Table of Contents</div>
+<div id="header">
+<h1 class="title">Väitöskirjaprojektin yhteenveto</h1>
+<h2 class="author">Markus Kainu</h2>
+</div>
+<div id="TOC">
 <ul>
-<li>
-<a href="#toc_0">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a>
-<ul>
-<li>
-<a href="#toc_1">Akateeminen julkaisutoiminta ja konferenssit</a>
-</li>
-<li>
-<a href="#toc_2">Menetelmäprojektit</a>
-</li>
-<li>
-<a href="#toc_3">Tutkimusrahoitus</a>
-</li>
-<li>
-<a href="#toc_4">Oman väitöstutkimuksen loppuun saattaminen</a>
-</li>
-</ul>
-</li>
+<li><a href="#tapahtunutta-vuonna-2013-ja-suunnitelmaa-vuodelle-2014"><span class="toc-section-number">1</span> Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a><ul>
+<li><a href="#akateeminen-julkaisutoiminta-ja-konferenssit"><span class="toc-section-number">1.1</span> Akateeminen julkaisutoiminta ja konferenssit</a></li>
+<li><a href="#menetelmäprojektit"><span class="toc-section-number">1.2</span> Menetelmäprojektit</a></li>
+<li><a href="#tutkimusrahoitus"><span class="toc-section-number">1.3</span> Tutkimusrahoitus</a></li>
+<li><a href="#oman-väitöstutkimuksen-loppuun-saattaminen"><span class="toc-section-number">1.4</span> Oman väitöstutkimuksen loppuun saattaminen</a></li>
+</ul></li>
 </ul>
 </div>
-
-
+<hr />
 <ul>
 <li><a href="index.html">etusivulle</a></li>
 </ul>
-
-<h1 id="toc_0">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</h1>
-
+<h1 id="tapahtunutta-vuonna-2013-ja-suunnitelmaa-vuodelle-2014"><span class="header-section-number">1</span> Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</h1>
 <p>Vuosi sitten suunnitellessani tätä vuotta kirjoitin seuraavasti:</p>
-
 <blockquote>
 <p>Tämä alkanut vuosi on väitöskirjaprojektin neljäs ja nykyrahoituksella viimeinen vuosi. Aikataulu on erittäin haastava projektin loppuunsaattamiselle. Tänä vuonna keskityn meneillään olevien papereiden valmiiksi kirjoittamiseen ja julkaisemiseen.</p>
 </blockquote>
-
 <p>Nyt vuotta myöhemmin on helppo todeta, että en ole saanut papereita valmiiksi ja julkaistuksi ja se on ensi vuoden tärkein tavoite.</p>
-
 <p>Ensin kuitenkin muutama kappale menneestä vuodesta 2013 ja sen jälkeen suunnitelmia projektin loppuun saattamiseksi.</p>
-
-<h2 id="toc_1">Akateeminen julkaisutoiminta ja konferenssit</h2>
-
+<h2 id="akateeminen-julkaisutoiminta-ja-konferenssit"><span class="header-section-number">1.1</span> Akateeminen julkaisutoiminta ja konferenssit</h2>
 <p>Akateeminen julkaisutoiminta oli hiljaista. Mikko Niemelän toimittama <em>Eurooppalaiset elinolot</em> kirja on painoprosessissa, joten alkuvuodesta siitä on tulossa yksi julkaistu luku. Se ei ole osa väitöskirjaa.</p>
-
 <p>Akateemisia konferensseja oli alunperin suunnitelmissa kaksi, HSE Moskovan (talouskorkeakoulu) RLMS-konferenssi ja Espanetin konferenssin Puolassa. Espanetiin jätin kokonaan hakematta ja lähetin sen sijaan abstraktin ESA:n konferenssiin Torinoon, jossa olimme Mikko Niemelän kanssa elokuun lopulla. Konferenssi oli iso, mutta tieteellinen vaikutus mitätön. Yhtä kaikki sain solmittua lisää kiinostavia yhteyksiä Venäjälle ja Itä-Eurooppaan. Moskovan talouskorkeakoulun Pietarin filiaali on ollut kiinnostunut kurssista koskien avoimia spatiaalisia analyysimenelmien käytöstä Venäjän kontekstissa.</p>
-
 <p>Toukokuiseen HSE Moskovan <a href="http://www.hse.ru/rlms/conference">RLMS-konferenssiin</a> kirjoitin hapuilevan paperin otsikolla <a href="http://muuankarski.github.io/monetisation/">Targeting performance of monthly cash payments at multidimensional poverty in Russia in 2000 - 2011</a>. Projekti oli melko työläs, sillä jouduin aika lyhyessä ajassa ottamaan haltuun 10 aaltoa niukasti venäjän kielellä dokumentoitua kyselyaineistoa ja tekemään siitä jotain analyysejä. Onnistuin löytämään kiinnostavan näkökulman luontoisetuuksien rahamääräistämisen köyhyysvaikutuksista, mutta sitä pitäisi vielä täsmentään ja tiivistää. En ole palannut paperiin sitten konferenssin, mutta parin kuukauden työllä saan siitä julkaisukelpoisen.</p>
-
 <p>Pidin HSE Moskovan ilmapiiristä ja päätin hakea elokuussa <a href="http://lcsr.hse.ru/en/about"><em>vertailevan sosiaalitutkimuksen laboratorion</em></a> <a href="http://lcsr.hse.ru/en/announcements/73919297.html">Associate Researcher</a> -ohjelmaan. Onnekseni pääsin mukaan ja olin marraskuussa viikon Moskovassa keskustelemassa vertailevasta sosiaalitutkimuksesta Ronald Inglehartin, Cristian Welzelin ja kumppaneiden kanssa ja esittelemässä Mikon ja minun <a href="">Attributions for poverty</a>-paperia. <em>Associate researcher</em> -ohjelmassa edellytetään osallistumista kolmeen heidän järjestämäänsä seminaariin/kesäkouluun sekä lopullisen paperin rinnakkaistallentamista heidän järjestelmäänsä. Olen menossa seuraavan kerran Moskovaan maaliskuun lopulla ja mahdollisesti vielä kesällä kahdeksi viikoksi heidän kesäkouluunsa Pietarin lähistölle teemalla <a href="http://lcsr.hse.ru/en/summer2014"><em>Categorical Data Analysis</em></a>. HSE Moskova kattaa kaikki kulut ohjelmassa mukana oleville, joten köyhälle tohtorikoulutettavalle se on erittäin ok.</p>
-
-<p>Konferenssien ohella olin heinäkuussa viikon Oslon yliopiston kesäkoulussa teemalla <a href="http://www.sv.uio.no/english/research/doctoral-degree/summer-school/courses-2013/bivand.html"><em>Using Spatial Data in the Social Sciences: An Applied Survey</em></a>, joka oli erinomainen oppimiskokemus. Kurssi oli perin vaativa aiheesta R-kielen spatiaalisen datan analyysiominaisuuksien soveltamisesta yhteiskuntatieteellisissä tutkimuskysymyksissä. Kurssin opettaja, Bergenin yliopiston aluetaloustieteen professori <a href="http://www.nhh.no/Default.aspx?ID=697">Roger Bivand</a> on ehdotonta alan huippua ja kurssin vaatimustaso oli sen mukainen. Itse olen jo parin vuoden ajan opiskellut omatoimisesti R:n spatiaalisen datan ominaisuuksia, mutta en vielä käyttänyt oikeassa tutkimuksessa. Kurssi oli pysäyttävä &quot;reality check&quot; siitä, mitä kaikkea spatiaalisesti ei voi eikä saa tutkia (eikä teoretisoida), mutta myös siihen mitä voi ja pitää. Kurssin seurauksena luovuin EU-silcin tms. kotitaloustiedusteluaineistojen spatiaalisesta analyysistä ja kohdistin kaiken tarmon <a href="https://github.com/muuankarski/censusanalysis">Venäjän väestölaskentadatan kesyttämiseen</a>. Artikkelissa <a href="https://github.com/muuankarski/geographies">Geographies of deprivation in Russian Federation</a> tulen soveltamaan näitä menetelmiä. Tämän artikkelin tekemistä hidastaa vuoden 2010 väestölaskentadatan julkaisun odottaminen. Sen mikrodatan on määrä ilmestyä tämän vuoden kuluessa, mutta toistaiseksi on ollut vielä hiljaista. Kollegat Moskovan HSE:ssä odottavat myös datan julkaisemista.</p>
-
-<h2 id="toc_2">Menetelmäprojektit</h2>
-
+<p>Konferenssien ohella olin heinäkuussa viikon Oslon yliopiston kesäkoulussa teemalla <a href="http://www.sv.uio.no/english/research/doctoral-degree/summer-school/courses-2013/bivand.html"><em>Using Spatial Data in the Social Sciences: An Applied Survey</em></a>, joka oli erinomainen oppimiskokemus. Kurssi oli perin vaativa aiheesta R-kielen spatiaalisen datan analyysiominaisuuksien soveltamisesta yhteiskuntatieteellisissä tutkimuskysymyksissä. Kurssin opettaja, Bergenin yliopiston aluetaloustieteen professori <a href="http://www.nhh.no/Default.aspx?ID=697">Roger Bivand</a> on ehdotonta alan huippua ja kurssin vaatimustaso oli sen mukainen. Itse olen jo parin vuoden ajan opiskellut omatoimisesti R:n spatiaalisen datan ominaisuuksia, mutta en vielä käyttänyt oikeassa tutkimuksessa. Kurssi oli pysäyttävä “reality check” siitä, mitä kaikkea spatiaalisesti ei voi eikä saa tutkia (eikä teoretisoida), mutta myös siihen mitä voi ja pitää. Kurssin seurauksena luovuin EU-silcin tms. kotitaloustiedusteluaineistojen spatiaalisesta analyysistä ja kohdistin kaiken tarmon <a href="https://github.com/muuankarski/censusanalysis">Venäjän väestölaskentadatan kesyttämiseen</a>. Artikkelissa <a href="https://github.com/muuankarski/geographies">Geographies of deprivation in Russian Federation</a> tulen soveltamaan näitä menetelmiä. Tämän artikkelin tekemistä hidastaa vuoden 2010 väestölaskentadatan julkaisun odottaminen. Sen mikrodatan on määrä ilmestyä tämän vuoden kuluessa, mutta toistaiseksi on ollut vielä hiljaista. Kollegat Moskovan HSE:ssä odottavat myös datan julkaisemista.</p>
+<h2 id="menetelmäprojektit"><span class="header-section-number">1.2</span> Menetelmäprojektit</h2>
 <p>Menetelmäprojektien osalta vuosi on ollut vilkas. Sain <a href="https://github.com/rOpenGov/rustfare">rustfare</a>-paketin r:ään toimintakuntoon keväällä ja se on kiinnostanut monia. Paranneltu versio olisi tarkoitus julkaista joulun pyhinä. Isompana hankkeena on ollut <a href="http://ropengov.github.io/">rOpenGov - R Ecosystem for Open Government Data and Computational Social Science</a>, jonka ideana on olla sateenkaariprojekti laskennallisista yhteiskuntatieteistä, avoimesta datasta ja menetelmistä kiinnostuneiden kehittäjien projekteille. Minun lisäksi suomalaisessa ydinporukassa mukana ovat <a href="http://antagomir.github.io/">Leo Lahti</a>, <a href="http://ouzor.github.io/">Juuso Parkkinen</a> ja <a href="https://tuhat.halvi.helsinki.fi/portal/en/persons/joona-lehtomaki%287f6888ed-acb0-4c6a-aab5-bc54f26d0e61%29.html">Joona Lehtomäki</a>. Leo oli esittelemässä projektia <a href="http://nips.cc/Conferences/2013/Program/event.php?ID=3710">koneoppimisen konferenssissa</a> jenkeissä joulukuun alussa (<a href="http://www.slideshare.net/antagomir/lahti-r-opengovnips13smaller">slaidit</a>) ja mielenkiinto projektia kohtaan on ollut kasvussa. Yritän saada joululoman aikana oman <a href="http://www.qog.pol.gu.se/">Quality of Government -instituutin</a> käyttävän <a href="https://github.com/muuankarski/rQog">rQog</a>-paketin testattua julkaisukuntoon. Paketin pohjalta on jo jotain sovelluksia omassa ja instituutin ja Kelan käytössä <a href="https://github.com/muuankarski/QogGVis">täällä</a>.</p>
-
-<p>Näiden projektien tekeminen on erittäin nopeaa nykyisellä porukalla ja meillä on läheiset suhteet ihan menetelmäkehityksen etulinjaan maailmalle. Rahoitusta pitäisi tosin yrittää saada lähiaikoina, sillä aikaa töiden ja perheen jälkeen on kaikilla koko ajan vähemmän. Avoin julkaiseminen, tutkimusdatan avaaminen ja avointen tutkimusmenetelmien käyttö on tullut yhä enemmän esille myös suomalaisessa keskustelussa. OKM:n tuore lausuntopyyntö <em>tiedon saatavuus</em> -työryhmän raportista poiki <a href="http://www.tdata.fi/dokumentit">50 lausuntoa yliopistoilta ja eri sidosryhmiltä</a>. Olin itse kirjoittamassa <a href="http://www.tdata.fi/documents/10180/43697/Open+Knowledge+Foundation+lausunto/bf089540-b41f-48c1-99c6-236d53ab69f4">Open Knowledge Foundationin lausuntoa</a>, ja avoimen tieteen keskustelua jo vuosia seuranneena on tullut vaikutelma että tutkijalähtöisiin pienen budjetin opetus ja -menetelmähankkeisiin voisi vihdoin olla rahoitusta saatavilla  myös Suomessa. Aalto-yliopistoon on rakenteilla <em>avoimen tieteen menetelmien</em> -kurssi ja sitä tullaan tarjoamaan myös muihin yliopistoihin.</p>
-
-<h2 id="toc_3">Tutkimusrahoitus</h2>
-
+<p>Näiden projektien tekeminen on erittäin nopeaa nykyisellä porukalla ja meillä on läheiset suhteet ihan menetelmäkehityksen etulinjaan maailmalle. Rahoitusta pitäisi tosin yrittää saada lähiaikoina, sillä aikaa töiden ja perheen jälkeen on kaikilla koko ajan vähemmän. Avoin julkaiseminen, tutkimusdatan avaaminen ja avointen tutkimusmenetelmien käyttö on tullut yhä enemmän esille myös suomalaisessa keskustelussa. OKM:n tuore lausuntopyyntö <em>tiedon saatavuus</em> -työryhmän raportista poiki <a href="http://www.tdata.fi/dokumentit">50 lausuntoa yliopistoilta ja eri sidosryhmiltä</a>. Olin itse kirjoittamassa <a href="http://www.tdata.fi/documents/10180/43697/Open+Knowledge+Foundation+lausunto/bf089540-b41f-48c1-99c6-236d53ab69f4">Open Knowledge Foundationin lausuntoa</a>, ja avoimen tieteen keskustelua jo vuosia seuranneena on tullut vaikutelma että tutkijalähtöisiin pienen budjetin opetus ja -menetelmähankkeisiin voisi vihdoin olla rahoitusta saatavilla myös Suomessa. Aalto-yliopistoon on rakenteilla <em>avoimen tieteen menetelmien</em> -kurssi ja sitä tullaan tarjoamaan myös muihin yliopistoihin.</p>
+<h2 id="tutkimusrahoitus"><span class="header-section-number">1.3</span> Tutkimusrahoitus</h2>
 <p>Haimme instituutin huippuyksikön <a href="http://www.helsinki.fi/aleksanteri/crm/structure.html#cluster3">welfare regime -klusterin</a> kansainvälisellä porukalla rahoitusta sekä ERC Advanced Grant että Norfacen <a href="http://www.norface.net/program_landing.asp?id=76">Welfare state Futures</a> -rahaa. Pääsimme molemmissa viimeiselle kierrokselle, mutta jäimme ilman rahoja. Lisäksi olin mukana sekalaisissa säätiöhauissa ja HY:n kolmivuotisapurahojen projekteissa, mutta erinomaisista lausunnoista huolimatta rahaa ei tullut mistään. Kv-rahoissa kilpailu on aika kovaa ja kansallisissa rahoissa instituutin huippuyksikkö-status kenties haittaa.</p>
-
 <p>Instituutin puolella vireillä on uusi ERC ja jahka Horizon2020 kuviot näiden osalta selviävät. Data- ja menetelmäprojektien tiimoilta on myös rahoitushakusuunnitelmia, mutta ne joutuvat vielä hetken odottaa kunnes projektit vähän kypsyvät ja tutkimusdatan ja -menetelmien tutkijalähtöiseen avaamista aletaan (kenties) tukea. Alustavasi olen keskustellut mukanaolosta Kankaan Ollin jatkoon päässeessä akatemiaprofessuuri-suunnitelmassa. Siitä pitäisi olla tarkempi suunnitelma vuodenvaihteen jälkeen valmiina.</p>
-
-<p>Instituutin taholta minua kehotettiin hakemaan jatkoa rahoitukselle HY:n tutkijakoulusta, koska he haluavat pitää minut talossa, mutta jätin sen prosessin kuitenkin väliin ja tekisin väikkärini mieluusti valmiiksi nykyisessä kahden yliopiston &quot;loukussa&quot;. Viime vuonna saatu huippuyksikköstatus heikensi selvästi instituutin taloudellista tukea lisäten samalla menoja, ja laitoksen talous on tiukalla. Itselleni mieluisin ratkaisu olisi saada jatkorahoitusta tutkimukselleni vielä ensi vuosi, jotta saisin projektit vietyä loppuun ja tutkinnon valmiiksi.</p>
-
-<h2 id="toc_4">Oman väitöstutkimuksen loppuun saattaminen</h2>
-
+<p>Instituutin taholta minua kehotettiin hakemaan jatkoa rahoitukselle HY:n tutkijakoulusta, koska he haluavat pitää minut talossa, mutta jätin sen prosessin kuitenkin väliin ja tekisin väikkärini mieluusti valmiiksi nykyisessä kahden yliopiston “loukussa”. Viime vuonna saatu huippuyksikköstatus heikensi selvästi instituutin taloudellista tukea lisäten samalla menoja, ja laitoksen talous on tiukalla. Itselleni mieluisin ratkaisu olisi saada jatkorahoitusta tutkimukselleni vielä ensi vuosi, jotta saisin projektit vietyä loppuun ja tutkinnon valmiiksi.</p>
+<h2 id="oman-väitöstutkimuksen-loppuun-saattaminen"><span class="header-section-number">1.4</span> Oman väitöstutkimuksen loppuun saattaminen</h2>
 <p>Oma menetelmä- ja kollaborointivetoinen tapa rakentaa väitöstutkimus näyttää edelleen järkevältä tavalta järjestää asia. Nyt vireillä olevat artikkelit ovat teoreettisesti vielä kehnoja, mutta siihen auttaa lukeminen sekä monet teoreettisesti edistyneet kollegat. Metodologian osalta olen päässyt osaksi sellaisia verkostoja, joiden kautta pystyn soveltamaan tutkimukseen sekä sellaisia aineistoja (Venäjän datat) että menetelmiä (ns. kovien tieteiden ajankohtaiset menetelmät), joita määrällisessä yhteiskuntatutkimuksessa on perin vähän käytetty. Lisäksi oma menetelmällinen ja tiedonhallinnan osaaminen mahdollistaa kaiken teknisen työn tekemisen niin, että työ kontribuoi tieteellisen tiedon ohella myös konkreettisesti menetelmiin analyysikirjastojen muodossa. Pidän siitä ajatuksesta että konkreettisesta laskennallisesta sosiaalitutkimuksesta jää myös konkreettinen laskennallinen tulos, jota itse ja muut voivat myöhemmissä tutkimuksissa käyttää. Vaikka pidänkin teoreettisia kontribuutiota menetelmällisiä arvokkaampina tieteellisessä tutkimuksessa, niin samalla koen että koko ajan tiukentuvilla (akateemisilla) työmarkkinoilla konkreettisesti aikaa ja rahaa säästävät menetelmälliset taidot avaavat myös hyviä mahdollisuuksia.</p>
-
-<p>Kunkin artikkeliprojektista saa kokonaiskäsityksen tutustumalla projekti sivuihin ja teksteihin. Vain yksi väitöskirjaan tulevista artikkeleista on pientä viilaamista vailla submittauskunnossa, toiset enemmän tai vähemmän keskeneräisiä. Kaikissa usein paljon tunteja vaativa aineistonhankinta ja -muokkaus on pitkälti tehty, joten tämä vuosi olisi tutkimusasetelmien teoreettista vahvistamista, tutkimusongelmien perustelua ja kontribuution suhteuttamista aiempaan, toisin sanoen kirjoittamista, lukemista ja kirjoittamista. </p>
-
+<p>Kunkin artikkeliprojektista saa kokonaiskäsityksen tutustumalla projekti sivuihin ja teksteihin. Vain yksi väitöskirjaan tulevista artikkeleista on pientä viilaamista vailla submittauskunnossa, toiset enemmän tai vähemmän keskeneräisiä. Kaikissa usein paljon tunteja vaativa aineistonhankinta ja -muokkaus on pitkälti tehty, joten tämä vuosi olisi tutkimusasetelmien teoreettista vahvistamista, tutkimusongelmien perustelua ja kontribuution suhteuttamista aiempaan, toisin sanoen kirjoittamista, lukemista ja kirjoittamista.</p>
 <p>Konferensseihin osallistumisen yritän pitää mahdollisimman vähänä, sillä niistä harvoin saa vastinetta ajallisille ja rahallisille kustannuksille. Pikemminkin pyrin saamaan kommentteja kollegoilta verkon yli ja kenties osallistumaan enemmän seminaareihin Suomessa. En myöskään halua olla pidempiä aikoja poissa kotoa kun arkenakin olen niin pitkiä päiviä töissä.</p>
-
 <p>Omien tutkimusten loppuun saattamisen ohella pyrin olemana mukana vain sellaisissa rahoitushauissa, jotka menevät läpi. On ollut todella harmillista tehdä useita rankkoja ylityöputkia rahoitushakemuksien viimeistelyyn, jotka ovat toistuvasti vetäneet vesiperän. Tämä tosin on erityisen hankala tavoite täytettäväksi.</p>
-
 </body>
-
 </html>

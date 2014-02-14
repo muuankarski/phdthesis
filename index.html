@@ -1,713 +1,807 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="finnish" xml:lang="finnish">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-<title>Väitöskirjaprojektin yhteenveto</title>
-
-
-
-
-
-<style type="text/css">
-<style>
-
--something { /* Just to escape the effect of html tag above in pandoc*/
-
-}
-
-.title /* Pandoc title header (h1.title) */
-    {
-    	text-align: center;
-	border-width:0px;
-	font-size: 1.5em;
-	margin: 0 0 5px 0;
-	word-spacing: .1em;
-	border-bottom: 0px;
-    }
-
-.author /* Pandoc author(s) header (h2.author) */
-    {
-    text-align: center;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    border-bottom: 0px;
-    }
-
-.date /* Pandoc date header (h3.date) */
-    {
-	font-family:  Avant Garde, Arial;
-	text-align: center;
-	font-size: 1.1em;
-	line-height: 1.2em;
-    }
-
-
-body {
-    margin-left: 240px;
-    max-width:600px; 
-    border: 0px;
-    font-family: Palatino, Helvetica, sans-serif;
-}
-
-
-#toc {
-    font-size:0.9em;
-    height: 100%;
-    position: fixed; 
-    width: 220px;
-    left: 5px;
-    padding-top: 20px;
-    color: #003333;
-    border-right: 1px dashed #C1C1C1;
-}
-
-#toc_header {
-    font-size: 1em;
-    font-weight: bold;    
-    border-bottom: 1px dashed #C1C1C1;
-    color: black;
-}
-
-
-
-#toc li {
-    padding: 2px 4px;
-    margin-left: 2px;
-}
-
-
-#toc a {
-    color: #003333;
-    display: block;
-}
-
-
-
-blockquote {
-	padding-left: .5em; 
-    border-left: 2px solid #C1C1C1;
-	font-style: italic;
-}
-
-
-pre {	
-   margin-top: 0;
-   max-width: 95%;
-   border: 1px dashed #ccc;
-   white-space: pre-wrap;
-   font-size:1.0em;
-    background: #FFFFFF;
-}
-
-pre code {
-   display: block; 
-   padding: 0.2em;
-   font-size:1.0em;
-}
-
-code.r, code.cpp {
-   background-color: #ECEEF0;
-}
-
-
-
-ul {
-	font-size: 100% !important;
-	font-family: Palatino, Helvetica, sans-serif;
-}
-li {
-	font-family: Palatino, Helvetica, sans-serif;
- 	font-size: 1em;
- 	line-height: 1.1em;
-}
-
-
-p {
-	font-family: Palatino, Helvetica, sans-serif;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	font-size: 1em;
-	line-height: 1.2em;
-}
-ol {
-	list-style: decimal outside;
-	list-style-type: decimal;
-	float: none;
-	margin: .5em 0 .5em 30px;
-	padding: 0;
-}
-ul {
-	margin: .2em 0 .2em 10px;
-	padding: 0;
-}
-UL li, ol li {
-	line-height: 1.1em;
-	padding: 2px;
-}
-a:link {
-	color: #657b83;
-   /* text-decoration: none; */
-}
-a:hover {
-	color: #657b83;
-}
-a:visited {
-	color: #657b83;
-}
-a:focus {
-	color: #657b83;
-}
-a:active {
-	color: #657b83;
-}
-
-h1 {
-	font-family:  Avant Garde, Arial;
-	font-size: 1.3em;
-	padding: 2px;
-	line-height: 1.3em;
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Markus Kainu" />
+  <title>Väitöskirjaprojektin yhteenveto</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style>
+  
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
     font-weight: 400;
-	/*letter-spacing: 0.06em;
-	word-spacing: .1em;*/
-    border-bottom: 0.5px solid #657b83;
-	text-transform:uppercase;
-    color: #657b83;
-}
-h2 {
-	font-family:  Avant Garde, Arial;
-	font-size: 1.1em;
-	padding: 2px;
-	line-height: 1.1em;
-    font-weight: 300;
-	letter-spacing: 0.05em;
-	word-spacing: .1em;
-	border-bottom: 0.5px dashed #657b83;
-/*	text-transform:capitalize;*/
-    color: #657b83;
-
-}
-h3 {
-	font-family:  Avant Garde, Arial;
-	font-size: 1.1em;
-	padding: 2px;
-	line-height: 1.1em;
-    font-weight: 300;
-	letter-spacing: 0.05em;
-	word-spacing: .1em;
-    color: #657b83;
-
-}
-h4 {
-	font-family: Avant Garde;
-	font-size: 1.0em;
-	padding: 2px;
-	line-height: 1.0em;
-	color: #555;
-	font-weight: italic;
-    color: #657b83;
-}
-h5 {
-	font-family: Avant Garde;
-	font-size: 1.05em;
-	padding: 2px;
-	line-height: 1.15em;
-	color: #555;
-	font-weight: normal;
-    color: #657b83;
-}
-h6 {
-	font-family: Avant Garde;
-	font-size: 1em;
-	padding: 2px;
-	line-height: 1.1em;
-	color: #555;
-	font-weight: normal;
-    color: #657b83;
-}
-p.caption, table caption, caption{
-    margin-top:0em;
-    padding:2px;
-    font-weight: 600;
-    font-size:1.0em;
-    text-align:left;
-    color: #657b83;
-}
-
-/* table styles */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-    line-height: 1.4em;
-	font-size: 0.9em;
-	/*font-family: monospace;*/
-
-}
-.views-table, table {
-	margin-left: 2px;
-	margin-bottom: 10px;
-	/*width: 1300px;*/
-}
-tr {
-	line-height: 1.2em;
-	border-bottom: #9e9e9e thin solid;
-}
-tr:last-child {
-	line-height: 1.2em;
-}
-th {
-	margin: 5px 0 5px 0;
-	padding: 0 5px 0 5px;
-/*	border-right: #9e9e9e thin solid; */
-	text-align: left;
-	border-bottom: #9e9e9e thin solid;
-}
-th:last-child {
-	margin: 5px 0 5px 0;
-	padding: 0 5px 0 5px;
-/*	border-right: #9e9e9e thin solid; */
-	text-align: left;
-}
-th:first-child {
-	margin: 5px 0 5px 0;
-	padding: 0 5px 0 5px;
-/*	border: #9e9e9e thin solid; */
-}
-tbody tr {
-	line-height: 1.2em;
-/*	border-left: #9e9e9e thin solid; */
-}
-tbody tr:nth-child(odd) {
-	line-height: 1.2em;
-	background-color: #F3F5F5;
-}
-td {
-	padding: 0 5px 0 5px;
-/*	border-right: #9e9e9e thin solid; */
-}
-td:last-child {
-	padding: 0 5px 0 5px;
-}
-DL {
-	margin: .3em 0 .3em 0;
-}
-DT {
-	margin: .3em 0 .3em 0;
-}
-DD {
-	line-height: 1.5em;
-	list-style: none;
-	margin: .7em 0 .7em 2em;
-}
-td.active {
-	background-color: transparent!important;
-}
-tr:last-child {
-	border-bottom: #9e9e9e thin solid;
-}
-tr:first-child {
-	border-top: #9e9e9e thin solid;
-}
-th:last-child {
-/*	border-left: #9e9e9e thin solid; */
-}
-th:last-child {
-	/*border-right: #9e9e9e thin solid;*/
-}
-</style>
-</style>
-
-
-
+    src: local('Lato Regular'), local('Lato-Regular'), url(fonts/Lato.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(fonts/LatoBold.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(fonts/LatoBlack.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'), url(fonts/LatoItalic.woff) format('woff');
+  }
+  
+  
+  -something { /* Just to escape the effect of html tag above in pandoc*/
+  
+  }
+  
+  .title /* Pandoc title header (h1.title) */
+      {
+      	text-align: center;
+  	border-width:0px;
+  	font-size: 1.5em;
+  	margin: 0 0 5px 0;
+  	word-spacing: .1em;
+  	border-bottom: 0px;
+      }
+  
+  .author /* Pandoc author(s) header (h2.author) */
+      {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      border-bottom: 0px;
+      }
+  
+  .date /* Pandoc date header (h3.date) */
+      {
+  	font-family:  Lato, Arial;
+  	text-align: center;
+  	font-size: 1.1em;
+  	line-height: 1.2em;
+      }
+  
+  
+  body {
+      margin-left: 240px;
+      max-width:600px; 
+      border: 0px;
+      font-family: Lato, Helvetica, sans-serif;
+  }
+  
+  
+  #toc {
+      font-size:0.9em;
+      height: 100%;
+      position: fixed; 
+      width: 220px;
+      left: 5px;
+      padding-top: 20px;
+      color: #003333;
+      border-right: 1px dashed #C1C1C1;
+  }
+  
+  #toc_header {
+      font-size: 1em;
+      font-weight: bold;    
+      border-bottom: 1px dashed #C1C1C1;
+      color: black;
+  }
+  
+  
+  
+  #TOC li {
+      padding: 2px 4px;
+      margin-left: 2px;
+  }
+  
+  
+  #TOC a {
+      color: #003333;
+      display: block;
+  }
+  
+  
+  #TOC {
+      font-size:0.9em;
+      height: 100%;
+      position: fixed; 
+      width: 220px;
+      left: 5px;
+      padding-top: 20px;
+      color: #003333;
+      border-right: 1px dashed #C1C1C1;
+  }
+  
+  #TOC_HEADER {
+      font-size: 1em;
+      font-weight: bold;    
+      border-bottom: 1px dashed #C1C1C1;
+      color: black;
+  }
+  
+  
+  
+  #TOC li {
+      padding: 2px 4px;
+      margin-left: 2px;
+  }
+  
+  
+  #TOC a {
+      color: #003333;
+      display: block;
+  }
+  
+  
+  blockquote {
+  	padding-left: .5em; 
+      border-left: 2px solid #C1C1C1;
+  	font-style: italic;
+  }
+  
+  
+  pre {	
+     margin-top: 0;
+     max-width: 95%;
+     border: 1px dashed #ccc;
+     white-space: pre-wrap;
+     font-size:1.0em;
+      background: #FFFFFF;
+  }
+  
+  pre code {
+     display: block; 
+     padding: 0.2em;
+     font-size:1.0em;
+  }
+  
+  code.r, code.cpp {
+     background-color: #ECEEF0;
+  }
+  
+  
+  
+  ul {
+  	font-size: 100% !important;
+  	font-family: Lato, Helvetica, sans-serif;
+  }
+  li {
+  	font-family: Lato, Helvetica, sans-serif;
+   	font-size: 1em;
+   	line-height: 1.1em;
+  }
+  
+  
+  p {
+  	font-family: Lato, Helvetica, sans-serif;
+  	padding-top: 2px;
+  	padding-bottom: 2px;
+  	font-size: 1em;
+  	line-height: 1.2em;
+  }
+  ol {
+  	list-style: decimal outside;
+  	list-style-type: decimal;
+  	float: none;
+  	margin: .5em 0 .5em 30px;
+  	padding: 0;
+  }
+  ul {
+  	margin: .2em 0 .2em 10px;
+  	padding: 0;
+  }
+  UL li, ol li {
+  	line-height: 1.1em;
+  	padding: 2px;
+  }
+  a:link {
+  	color: #657b83;
+     /* text-decoration: none; */
+  }
+  a:hover {
+  	color: #657b83;
+  }
+  a:visited {
+  	color: #657b83;
+  }
+  a:focus {
+  	color: #657b83;
+  }
+  a:active {
+  	color: #657b83;
+  }
+  
+  h1 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.3em;
+  	padding: 2px;
+  	line-height: 1.3em;
+      font-weight: 400;
+  	/*letter-spacing: 0.06em;
+  	word-spacing: .1em;*/
+      border-bottom: 0.5px solid #657b83;
+  	text-transform:uppercase;
+      color: #657b83;
+  }
+  h2 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+      font-weight: 300;
+  	letter-spacing: 0.05em;
+  	word-spacing: .1em;
+  	border-bottom: 0.5px dashed #657b83;
+  /*	text-transform:capitalize;*/
+      color: #657b83;
+  
+  }
+  h3 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+      font-weight: 300;
+  	letter-spacing: 0.05em;
+  	word-spacing: .1em;
+      color: #657b83;
+  
+  }
+  h4 {
+  	font-family: Lato;
+  	font-size: 1.0em;
+  	padding: 2px;
+  	line-height: 1.0em;
+  	color: #555;
+  	font-weight: italic;
+      color: #657b83;
+  }
+  h5 {
+  	font-family: Avant Garde;
+  	font-size: 1.05em;
+  	padding: 2px;
+  	line-height: 1.15em;
+  	color: #555;
+  	font-weight: normal;
+      color: #657b83;
+  }
+  h6 {
+  	font-family: Lato;
+  	font-size: 1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+  	color: #555;
+  	font-weight: normal;
+      color: #657b83;
+  }
+  p.caption, table caption, caption{
+      margin-top:0em;
+      padding:2px;
+      font-weight: 600;
+      font-size:1.0em;
+      text-align:left;
+      color: #657b83;
+  }
+  
+  /* table styles */
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+      line-height: 1.4em;
+  	font-size: 0.9em;
+  	/*font-family: monospace;*/
+  
+  }
+  .views-table, table {
+  	margin-left: 2px;
+  	margin-bottom: 10px;
+  	/*width: 1300px;*/
+  }
+  tr {
+  	line-height: 1.2em;
+  	border-bottom: #9e9e9e thin solid;
+  }
+  tr:last-child {
+  	line-height: 1.2em;
+  }
+  th {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  	text-align: left;
+  	border-bottom: #9e9e9e thin solid;
+  }
+  th:last-child {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  	text-align: left;
+  }
+  th:first-child {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border: #9e9e9e thin solid; */
+  }
+  tbody tr {
+  	line-height: 1.2em;
+  /*	border-left: #9e9e9e thin solid; */
+  }
+  tbody tr:nth-child(odd) {
+  	line-height: 1.2em;
+  	background-color: #F3F5F5;
+  }
+  td {
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  }
+  td:last-child {
+  	padding: 0 5px 0 5px;
+  }
+  DL {
+  	margin: .3em 0 .3em 0;
+  }
+  DT {
+  	margin: .3em 0 .3em 0;
+  }
+  DD {
+  	line-height: 1.5em;
+  	list-style: none;
+  	margin: .7em 0 .7em 2em;
+  }
+  td.active {
+  	background-color: transparent!important;
+  }
+  tr:last-child {
+  	border-bottom: #9e9e9e thin solid;
+  }
+  tr:first-child {
+  	border-top: #9e9e9e thin solid;
+  }
+  th:last-child {
+  /*	border-left: #9e9e9e thin solid; */
+  }
+  th:last-child {
+  	/*border-right: #9e9e9e thin solid;*/
+  }
+  </style>
 </head>
-
 <body>
-<div id="toc">
-<div id="toc_header">Table of Contents</div>
+<div id="header">
+<h1 class="title">Väitöskirjaprojektin yhteenveto</h1>
+<h2 class="author">Markus Kainu</h2>
+</div>
+<div id="TOC">
 <ul>
-<li>
-<a href="#toc_0">Johdanto</a>
-</li>
-<li>
-<a href="#toc_1">Projektit</a>
-<ul>
-<li>
-<a href="#toc_2">Artikkelikäsikirjoitukset</a>
-<ul>
-<li>
-<a href="#toc_3">Comparative post-socialist</a>
-</li>
-<li>
-<a href="#toc_4">Russian spesific</a>
-</li>
-<li>
-<a href="#toc_5">Ones that have not taken off</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#toc_6">Data ja metodiprojektit</a>
-<ul>
-<li>
-<a href="#toc_7">rOpenGov-projektiin liittyvät</a>
-</li>
-<li>
-<a href="#toc_8">Omat sekalaiset visualisointi/ käyttöliittymäprojektit</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#toc_9">Muut ammatilliset kirjoitusprojektit</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#toc_10">Vuosikertomukset ja suunnitelmat</a>
-</li>
-<li>
-<a href="#toc_11">Opintosuoritukset</a>
-</li>
-<li>
-<a href="#toc_12">Yhteenvetoartikkeli</a>
-</li>
+<li><a href="#johdanto"><span class="toc-section-number">1</span> Johdanto</a></li>
+<li><a href="#vuosikertomukset-ja-suunnitelmat"><span class="toc-section-number">2</span> Vuosikertomukset ja suunnitelmat</a></li>
+<li><a href="#projektit"><span class="toc-section-number">3</span> Projektit</a><ul>
+<li><a href="#artikkelikäsikirjoitukset"><span class="toc-section-number">3.1</span> Artikkelikäsikirjoitukset</a><ul>
+<li><a href="#comparative-post-socialist"><span class="toc-section-number">3.1.1</span> Comparative post-socialist</a></li>
+<li><a href="#russian-spesific"><span class="toc-section-number">3.1.2</span> Russian spesific</a></li>
+<li><a href="#ones-that-have-not-taken-off"><span class="toc-section-number">3.1.3</span> Ones that have not taken off</a></li>
+</ul></li>
+<li><a href="#data-ja-metodiprojektit"><span class="toc-section-number">3.2</span> Data ja metodiprojektit</a><ul>
+<li><a href="#ropengov-projektiin-liittyvät"><span class="toc-section-number">3.2.1</span> rOpenGov-projektiin liittyvät</a></li>
+<li><a href="#omat-sekalaiset-visualisointi-käyttöliittymäprojektit"><span class="toc-section-number">3.2.2</span> Omat sekalaiset visualisointi/ käyttöliittymäprojektit</a></li>
+</ul></li>
+<li><a href="#muut-ammatilliset-kirjoitusprojektit"><span class="toc-section-number">3.3</span> Muut ammatilliset kirjoitusprojektit</a></li>
+</ul></li>
+<li><a href="#väitöskirjaprojektin-yhteenveto"><span class="toc-section-number">4</span> Väitöskirjaprojektin yhteenveto</a><ul>
+<li><a href="#opintosuoritukset"><span class="toc-section-number">4.1</span> Opintosuoritukset</a><ul>
+<li><a href="#vuosi-2010"><span class="toc-section-number">4.1.1</span> Vuosi 2010</a></li>
+<li><a href="#vuosi-2011"><span class="toc-section-number">4.1.2</span> Vuosi 2011</a></li>
+<li><a href="#vuosi-2012"><span class="toc-section-number">4.1.3</span> Vuosi 2012</a></li>
+<li><a href="#vuosi-2013"><span class="toc-section-number">4.1.4</span> Vuosi 2013</a></li>
+<li><a href="#yhteensä-vuosina-2010---2013"><span class="toc-section-number">4.1.5</span> Yhteensä vuosina 2010 - 2013</a></li>
+</ul></li>
+<li><a href="#artikkelit"><span class="toc-section-number">4.2</span> Artikkelit</a></li>
+<li><a href="#rahoitussuunnitelmat"><span class="toc-section-number">4.3</span> Rahoitussuunnitelmat</a></li>
+</ul></li>
+<li><a href="#yhteenvetoartikkeli"><span class="toc-section-number">5</span> Yhteenvetoartikkeli</a></li>
 </ul>
 </div>
-
-
-<h1 class="title">Väitöskirjaprojektin yhteenveto</h1>
-
-<h1 id="toc_0">Johdanto</h1>
-
-<p>Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projektit. Sivujen vasemmassa laidassa on aina ko. sivun sisällysluettelo. Kuvaus projektin nykytilasta ja lähitulevaisuudesta löytyy kohdasta <a href="plan2014.html">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a>. Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät tämän <a href="#toc_10">sivun alaosasta</a>.</p>
-
+<hr />
+<h1 id="johdanto"><span class="header-section-number">1</span> Johdanto</h1>
+<p>Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projektit. Sivujen vasemmassa laidassa on aina ko. sivun sisällysluettelo. Kuvaus projektin nykytilasta ja lähitulevaisuudesta löytyy kohdasta <a href="plan2014.html">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a>. Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät <a href="#toc_2">hieman alempaa</a>. Ajantasainen projektin yhteenveto löytyy <a href="#toc_11">sivun lopusta</a>.</p>
+<pre><code>## [1] &quot;Päivitetty 2014-02-14 18:29:29&quot;</code></pre>
 <p>Tämän sivun linkit johtavat projektieni sivuille <a href="https://github.com/">GitHub</a>:ssa. <em>Github</em> on yksi monista <a href="http://fi.wikipedia.org/wiki/Git"><em>git</em></a>-<a href="http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control">versionhallinnan</a> <em>hosting</em>-palveluista. Github:ia käytetään etupäässä avoimen lähdekoodin ohjelmistoprojekteissa, mutta yhä enemmän myös akateemisten tutkimusprojektien alustana. Itse pidän kirjaa tekstieni ja analyysieni versiohistoriasta <em>git</em>:n avulla ja julkaisen versiohistoriat etenkin yhteistyöprojekteissa <em>GitHubissa</em>. Tämän sivun linkit johtavat projektien ns. <em>julkisille sivuille</em>, joista ei pääse ilman tunnuksia ja minun valtuutusta katsomaan itse tutkimuksen etenemistä. Sitten itse asiaan.</p>
-
-<h1 id="toc_1">Projektit</h1>
-
-<p>Alla oleviin taulukoihin olen jäsennellyt ja linkittänyt kaikki väitöskirjatutkimuksen ja oman ammatillisen osaamiseni kannalta tärkeimmät projektit. Ensimmäisenä ovat <em>artikkelikäsikirjoitukset</em>, toisena <em>data- ja metodiprojektit</em> ja kolmantena <em>muut ammatilliset kirjoitusprojektit</em>. Kunkin projektin alla on otsikko, lyhyt kuvaus sekä linkki projektin github sivuille. Suljetuissa projekteissa näkyvissä ovat vain ns. julkiset sivut sillä hetkellä, kun taas avoimissa projekteista pääsee suoraan projektikansioon.</p>
-
-<h2 id="toc_2">Artikkelikäsikirjoitukset</h2>
-
-<p><em>Artikkelikäsikirjoitukset</em> olen luokitellut <em>vertaileviin</em>, <em>Venäjän tapaustutkimuksiin</em> ja <em>flopanneisiin</em> artikkelikäsikirjoituksiin. </p>
-
-<h3 id="toc_3">Comparative post-socialist</h3>
-
-<table><thead>
-<tr>
-<th>Title</th>
-<th>Type</th>
-<th>Link</th>
-<th>Status</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Attributions for poverty in Post-Socialist countries</td>
-<td>Article draft with Mikko that <strong>will be part of thesis</strong></td>
-<td><a href="http://muuankarski.github.io/attributions/">github</a></td>
-<td>To be submitted in early 2014</td>
-</tr>
-<tr>
-<td>Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe</td>
-<td>Article draft with Olli Kangas &amp; Joakim Palme <strong>will NOT be part of thesis</strong></td>
-<td><a href="http://muuankarski.github.io/exitentry/">github</a></td>
-<td>Submitted in Dec 2013</td>
-</tr>
-<tr>
-<td>European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries</td>
-<td>Article draft that <strong>will be part of thesis</strong></td>
-<td><a href="http://muuankarski.github.io/deprivation/">github</a></td>
-<td>Some work. To be submitted Autumn 2014</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_4">Russian spesific</h3>
-
-<table><thead>
-<tr>
-<th>Title</th>
-<th>Type</th>
-<th>Link</th>
-<th>Status</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Targeting performance of monthly cash payments at multidimensional poverty in Russia in 2000 - 2011</td>
-<td>Article draft that <strong>will be part of thesis</strong></td>
-<td><a href="http://muuankarski.github.io/monetisation/">github</a></td>
-<td>Lots of work. To be submitted in late 2014</td>
-</tr>
-<tr>
-<td>Geographies of deprivation in Russian Federation</td>
-<td>Article draft that <strong>will be part of thesis</strong></td>
-<td><a href="https://github.com/muuankarski/geographies">github</a></td>
-<td>Lots of work. To be submitted in late 2014</td>
-</tr>
-<tr>
-<td>Modernisation and Russian Welfare regime</td>
-<td>Article draft with Markku Kivinen, Meri Kulmala and Jouko Nikula for <a href="http://www.metapress.com/content/122625/?p=c4ba001b0a7d425585532b911e01c1b0&amp;pi=2">Demokratizatsiya: The Journal of Post-Soviet Democratization</a>. <strong>will NOT be part of thesis</strong></td>
-<td>No project running yet.</td>
-<td>To be submitted in late spring 2014</td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_5">Ones that have not taken off</h3>
-
-<table><thead>
-<tr>
-<th>Title</th>
-<th>Why not</th>
-<th>link</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>WHO GETS WHAT - AND WHERE: Regional poverty outcomes of social assistance in enlarged EU: The case of Poland and Austria</td>
-<td>Has been pending useless availability of regionally aggregated data both in LIS and EU-silc</td>
-<td><a href="http://muuankarski.github.io/regional2013/">github</a></td>
-</tr>
-<tr>
-<td>Social cash benefits and poverty spells in post-soviet Russia</td>
-<td>This was replaced by the <strong>monetisation article</strong> above. Some longitudinal work should be done using RLMS some time..</td>
-<td><a href="pending/pending.html">abstract</a></td>
-</tr>
-</tbody></table>
-
-<h2 id="toc_6">Data ja metodiprojektit</h2>
-
-<p>Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain tutkimuksen tekemisen puitteina, vaan myös menetelmäartikkelin kirjoittamisen aiheena. Yksi artikkeleista tulee käsittelemään kirjoittamaani rustfare-pakettia, jonka avulla on mahdollista käyttää avointa Venäjä-dataa suoraan R-ohjelmistossa. <a href="http://ropengov.github.io/">rOpenGov</a>-projektissa taas meillä on tarkoituksena julkaista myös perinteisiä kanavia pitkin, mutta aikaisintaan syksyllä 2014, riippuen miten saamme projektiin lisää kv-kehittäjiä ja muita yhteistyötahoja (ja rahaa) mukaan.</p>
-
-<h3 id="toc_7">rOpenGov-projektiin liittyvät</h3>
-
-<table><thead>
-<tr>
-<th>Title</th>
-<th>Type</th>
-<th>link</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><strong>rOpenGov</strong> - R Ecosystem for Open Government Data and Computational Social Science</td>
-<td>A joint project of many developers internationally</td>
-<td><a href="http://ropengov.github.io/">github - website</a> <a href="https://github.com/rOpenGov">github - code base</a></td>
-</tr>
-<tr>
-<td><strong>rQog</strong> - Search, extract and format data from the Quality of Government Institute data</td>
-<td>Simple, targeted library for QoG-database</td>
-<td><a href="https://github.com/muuankarski/rQog">github</a> <a href="http://markuskainu.fi/rqog/">documentation</a></td>
-</tr>
-<tr>
-<td><strong>rustfare</strong> - Algorithms for Russian data</td>
-<td>My own project within rOpenGov</td>
-<td><a href="https://github.com/rOpenGov/rustfare">github</a> <a href="http://markuskainu.fi/rustfare/">documentation</a></td>
-</tr>
-</tbody></table>
-
-<h3 id="toc_8">Omat sekalaiset visualisointi/ käyttöliittymäprojektit</h3>
-
-<table><thead>
-<tr>
-<th>Title</th>
-<th>Type</th>
-<th>link</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Exploring Russian Census data using R</td>
-<td>Data mining project for article</td>
-<td><a href="https://github.com/muuankarski/censusanalysis">github</a></td>
-</tr>
-<tr>
-<td>GoogleVis aka bubble chart visualisation of Rosstat Regional Data</td>
-<td>Visualization of Russian regional data for teaching and exploring the data</td>
-<td><a href="https://github.com/muuankarski/rusRegionGVis">github</a></td>
-</tr>
-<tr>
-<td>Quality of Government Institute data as Motion Charts</td>
-<td>Visualization of Quality of government data for teaching and data exploration</td>
-<td><a href="https://github.com/muuankarski/QogGVis">github</a></td>
-</tr>
-</tbody></table>
-
-<h2 id="toc_9">Muut ammatilliset kirjoitusprojektit</h2>
-
-<table><thead>
-<tr>
-<th>Title</th>
-<th>Type</th>
-<th>Link</th>
-<th>Status</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Kainu, Markus, &amp; Niemelä, Mikko. Taloudelliset elinolot ja elämänvaiheet Euroopassa. In Eurooppalaiset elinolot (Forthcoming), edited by Mikko Niemelä. Helsinki: Kansaneläkelaitos, 2014.</td>
-<td>Johdanto-luku kirjaan</td>
-<td></td>
-<td>Accepted</td>
-</tr>
-<tr>
-<td>Kainu, Markus. 2014. Open research methods in computational social sciences and humanities: introducing R</td>
-<td>Luku Jessica Parland.von Essenin ja Kenneth Nybergin toimittamaan <a href="http://digihist.se/">Historia i en digital värld</a>-kirjaan</td>
-<td><a href="https://github.com/muuankarski/rlang">github</a></td>
-<td>eka versio submitattu</td>
-</tr>
-</tbody></table>
-
-<h1 id="toc_10">Vuosikertomukset ja suunnitelmat</h1>
-
+<h1 id="vuosikertomukset-ja-suunnitelmat"><span class="header-section-number">2</span> Vuosikertomukset ja suunnitelmat</h1>
 <ul>
-<li>  <a href="plan2014.html">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a></li>
-<li>  <a href="plan2013.html">Tapahtunutta vuonna 2012 ja suunnitelma vuodelle 2013</a></li>
-<li>  <a href="plan2012.html">Happened in 2010-2011 and Research plan for years 2012-2013</a></li>
-<li>  <a href="plan2010.html">Alkuperäinen suunnitelma</a></li>
+<li><a href="plan2014.html">Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014</a></li>
+<li><a href="plan2013.html">Tapahtunutta vuonna 2012 ja suunnitelma vuodelle 2013</a></li>
+<li><a href="plan2012.html">Happened in 2010-2011 and Research plan for years 2012-2013</a></li>
+<li><a href="plan2010.html">Alkuperäinen suunnitelma</a></li>
 </ul>
-
-<h1 id="toc_11">Opintosuoritukset</h1>
-
-<table><thead>
-<tr>
-<th>Suoritus</th>
-<th>Pisteet</th>
-<th>Linkki tapahtumaan</th>
-<th>Paperin otsikko</th>
+<h1 id="projektit"><span class="header-section-number">3</span> Projektit</h1>
+<p>Alla oleviin taulukoihin olen jäsennellyt ja linkittänyt kaikki väitöskirjatutkimuksen ja oman ammatillisen osaamiseni kannalta tärkeimmät projektit. Ensimmäisenä ovat <em>artikkelikäsikirjoitukset</em>, toisena <em>data- ja metodiprojektit</em> ja kolmantena <em>muut ammatilliset kirjoitusprojektit</em>. Kunkin projektin alla on otsikko, lyhyt kuvaus sekä linkki projektin github sivuille. Suljetuissa projekteissa näkyvissä ovat vain ns. julkiset sivut sillä hetkellä, kun taas avoimissa projekteista pääsee suoraan projektikansioon.</p>
+<h2 id="artikkelikäsikirjoitukset"><span class="header-section-number">3.1</span> Artikkelikäsikirjoitukset</h2>
+<p><em>Artikkelikäsikirjoitukset</em> olen luokitellut <em>vertaileviin</em>, <em>Venäjän tapaustutkimuksiin</em> ja <em>flopanneisiin</em> artikkelikäsikirjoituksiin.</p>
+<h3 id="comparative-post-socialist"><span class="header-section-number">3.1.1</span> Comparative post-socialist</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Title</th>
+<th align="left">Type</th>
+<th align="left">Link</th>
+<th align="left">Status</th>
 </tr>
-</thead><tbody>
-<tr>
-<td><strong>Vuosi 2010</strong></td>
-<td></td>
-<td></td>
-<td></td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Attributions for poverty in Post-Socialist countries</td>
+<td align="left">Article draft with Mikko that <strong>will be part of thesis</strong></td>
+<td align="left"><a href="http://muuankarski.github.io/attributions/">github</a></td>
+<td align="left">To be submitted in early 2014</td>
 </tr>
-<tr>
-<td>Kv-konferenssi</td>
-<td>5</td>
-<td><a href="http://webh01.ua.ac.be/csb/fiss/?page_id=53">Seventeenth International Research Seminar on ‘Issues in Social Security’: The Global Crisis : Impact and Challenges for Social Security - Sigtuna, Sweden, 16-18 June 2010</a></td>
-<td><em>Cross-sectional profile of poverty and inequality outcomes of income redistribution schemes in European post-socialist countries</em>)</td>
+<tr class="even">
+<td align="left">Welfare State Entry and Exit: Combatting macro-economic and life-course sustainability deficit in Europe</td>
+<td align="left">Article draft with Olli Kangas &amp; Joakim Palme <strong>will NOT be part of thesis</strong></td>
+<td align="left"><a href="http://muuankarski.github.io/exitentry/">github</a></td>
+<td align="left">Submitted in Dec 2013</td>
 </tr>
-<tr>
-<td>Kv-konferenssi</td>
-<td>5</td>
-<td><a href="http://tatk.elte.hu/news-english/1398-espanet-2010-annual-conference"> 8th ESPAnet Conference 2010 Social Policy and the Global Crisis: Consequences and Responses</a></td>
-<td><em>Attributions for Poverty in European Post Socialist Countries</em></td>
+<tr class="odd">
+<td align="left">European regimes of material deprivation: Temporal dynamics of components of material deprivation in the EU27 countries</td>
+<td align="left">Article draft that <strong>will be part of thesis</strong></td>
+<td align="left"><a href="http://muuankarski.github.io/deprivation/">github</a></td>
+<td align="left">Some work. To be submitted Autumn 2014</td>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td><a href="">Title of the paper</a></td>
+</tbody>
+</table>
+<h3 id="russian-spesific"><span class="header-section-number">3.1.2</span> Russian spesific</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Title</th>
+<th align="left">Type</th>
+<th align="left">Link</th>
+<th align="left">Status</th>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td><a href="">Title of the paper</a></td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Targeting performance of monthly cash payments at multidimensional poverty in Russia in 2000 - 2011</td>
+<td align="left">Article draft that <strong>will be part of thesis</strong></td>
+<td align="left"><a href="http://muuankarski.github.io/monetisation/">github</a></td>
+<td align="left">Lots of work. To be submitted in late 2014</td>
 </tr>
-<tr>
-<td><strong>Vuosi 2011</strong></td>
-<td></td>
-<td></td>
-<td></td>
+<tr class="even">
+<td align="left">Geographies of deprivation in Russian Federation</td>
+<td align="left">Article draft that <strong>will be part of thesis</strong></td>
+<td align="left"><a href="https://github.com/muuankarski/geographies">github</a></td>
+<td align="left">Lots of work. To be submitted in late 2014</td>
 </tr>
-<tr>
-<td>Kv-konferenssi</td>
-<td>5</td>
-<td><a href="http://webh01.ua.ac.be/csb/fiss/?page_id=48"> 18th International Research Seminar on Issues in Social Security, June 10, 2011. Foundation for International Studies on Social Security.</a></td>
-<td><em>WHO GETS WHAT - AND WHERE? Regional poverty outcomes of social assistance in enlarged EU</em></td>
+<tr class="odd">
+<td align="left">Modernisation and Russian Welfare regime</td>
+<td align="left">Article draft with Markku Kivinen, Meri Kulmala and Jouko Nikula for <a href="http://www.metapress.com/content/122625/?p=c4ba001b0a7d425585532b911e01c1b0&amp;pi=2">Demokratizatsiya: The Journal of Post-Soviet Democratization</a>. <strong>will NOT be part of thesis</strong></td>
+<td align="left">No project running yet.</td>
+<td align="left">To be submitted in late spring 2014</td>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+</tbody>
+</table>
+<h3 id="ones-that-have-not-taken-off"><span class="header-section-number">3.1.3</span> Ones that have not taken off</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Title</th>
+<th align="left">Why not</th>
+<th align="left">link</th>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">WHO GETS WHAT - AND WHERE: Regional poverty outcomes of social assistance in enlarged EU: The case of Poland and Austria</td>
+<td align="left">Has been pending useless availability of regionally aggregated data both in LIS and EU-silc</td>
+<td align="left"><a href="http://muuankarski.github.io/regional2013/">github</a></td>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+<tr class="even">
+<td align="left">Social cash benefits and poverty spells in post-soviet Russia</td>
+<td align="left">This was replaced by the <strong>monetisation article</strong> above. Some longitudinal work should be done using RLMS some time..</td>
+<td align="left"><a href="pending/pending.html">abstract</a></td>
 </tr>
-<tr>
-<td><strong>Vuosi 2012</strong></td>
-<td></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+<h2 id="data-ja-metodiprojektit"><span class="header-section-number">3.2</span> Data ja metodiprojektit</h2>
+<p>Data- ja menetelmäprojektit ovat merkittävä osa väitöstutkimusta. Ei vain tutkimuksen tekemisen puitteina, vaan myös menetelmäartikkelin kirjoittamisen aiheena. Yksi artikkeleista tulee käsittelemään kirjoittamaani rustfare-pakettia, jonka avulla on mahdollista käyttää avointa Venäjä-dataa suoraan R-ohjelmistossa. <a href="http://ropengov.github.io/">rOpenGov</a>-projektissa taas meillä on tarkoituksena julkaista myös perinteisiä kanavia pitkin, mutta aikaisintaan syksyllä 2014, riippuen miten saamme projektiin lisää kv-kehittäjiä ja muita yhteistyötahoja (ja rahaa) mukaan.</p>
+<h3 id="ropengov-projektiin-liittyvät"><span class="header-section-number">3.2.1</span> rOpenGov-projektiin liittyvät</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Title</th>
+<th align="left">Type</th>
+<th align="left">link</th>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>rOpenGov</strong> - R Ecosystem for Open Government Data and Computational Social Science</td>
+<td align="left">A joint project of many developers internationally</td>
+<td align="left"><a href="http://ropengov.github.io/">github - website</a> <a href="https://github.com/rOpenGov">github - code base</a></td>
 </tr>
-<tr>
-<td><strong>Vuosi 2013</strong></td>
-<td></td>
-<td></td>
-<td></td>
+<tr class="even">
+<td align="left"><strong>rQog</strong> - Search, extract and format data from the Quality of Government Institute data</td>
+<td align="left">Simple, targeted library for QoG-database</td>
+<td align="left"><a href="https://github.com/muuankarski/rQog">github</a> <a href="http://markuskainu.fi/rqog/">documentation</a></td>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+<tr class="odd">
+<td align="left"><strong>rustfare</strong> - Algorithms for Russian data</td>
+<td align="left">My own project within rOpenGov</td>
+<td align="left"><a href="https://github.com/rOpenGov/rustfare">github</a> <a href="http://markuskainu.fi/rustfare/">documentation</a></td>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+</tbody>
+</table>
+<h3 id="omat-sekalaiset-visualisointi-käyttöliittymäprojektit"><span class="header-section-number">3.2.2</span> Omat sekalaiset visualisointi/ käyttöliittymäprojektit</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Title</th>
+<th align="left">Type</th>
+<th align="left">link</th>
 </tr>
-<tr>
-<td><strong>Vuosi 2014</strong></td>
-<td></td>
-<td></td>
-<td></td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Exploring Russian Census data using R</td>
+<td align="left">Data mining project for article</td>
+<td align="left"><a href="https://github.com/muuankarski/censusanalysis">github</a></td>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+<tr class="even">
+<td align="left">GoogleVis aka bubble chart visualisation of Rosstat Regional Data</td>
+<td align="left">Visualization of Russian regional data for teaching and exploring the data</td>
+<td align="left"><a href="https://github.com/muuankarski/rusRegionGVis">github</a></td>
 </tr>
-<tr>
-<td>FISS</td>
-<td>5</td>
-<td><a href="Conference">FISS</a></td>
-<td>paper</td>
+<tr class="odd">
+<td align="left">Quality of Government Institute data as Motion Charts</td>
+<td align="left">Visualization of Quality of government data for teaching and data exploration</td>
+<td align="left"><a href="https://github.com/muuankarski/QogGVis">github</a></td>
 </tr>
-<tr>
-<td><strong>Ýhteensä</strong></td>
-<td><strong>100</strong></td>
-<td></td>
-<td></td>
+</tbody>
+</table>
+<h2 id="muut-ammatilliset-kirjoitusprojektit"><span class="header-section-number">3.3</span> Muut ammatilliset kirjoitusprojektit</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Title</th>
+<th align="left">Type</th>
+<th align="left">Link</th>
+<th align="left">Status</th>
 </tr>
-</tbody></table>
-
-<h1 id="toc_12">Yhteenvetoartikkeli</h1>
-
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Kainu, Markus, &amp; Niemelä, Mikko. Taloudelliset elinolot ja elämänvaiheet Euroopassa. In Eurooppalaiset elinolot (Forthcoming), edited by Mikko Niemelä. Helsinki: Kansaneläkelaitos, 2014.</td>
+<td align="left">Johdanto-luku kirjaan</td>
+<td align="left"></td>
+<td align="left">Accepted</td>
+</tr>
+<tr class="even">
+<td align="left">Kainu, Markus. 2014. Open research methods in computational social sciences and humanities: introducing R</td>
+<td align="left">Luku Jessica Parland.von Essenin ja Kenneth Nybergin toimittamaan <a href="http://digihist.se/">Historia i en digital värld</a>-kirjaan</td>
+<td align="left"><a href="https://github.com/muuankarski/rlang">github</a></td>
+<td align="left">eka versio submitattu</td>
+</tr>
+</tbody>
+</table>
+<h1 id="väitöskirjaprojektin-yhteenveto"><span class="header-section-number">4</span> Väitöskirjaprojektin yhteenveto</h1>
+<h2 id="opintosuoritukset"><span class="header-section-number">4.1</span> Opintosuoritukset</h2>
+<h3 id="vuosi-2010"><span class="header-section-number">4.1.1</span> Vuosi 2010</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Suoritus</th>
+<th align="left">Pisteet</th>
+<th align="left">Kurssi/konferenssi</th>
+<th align="left">Suoritus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">kesakoulu</td>
+<td align="left">3</td>
+<td align="left">VASTUU-tutkijakoulu Mekrijärvellä 27.-28.5.2010</td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left">Kv-konferenssi</td>
+<td align="left">5</td>
+<td align="left"><a href="http://webh01.ua.ac.be/csb/fiss/?page_id=53">‘Issues in Social Security’: The Global Crisis : Impact and Challenges for Social Security - Sigtuna, Sweden, 16-18 June 2010</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="odd">
+<td align="left">Kesäkoulu</td>
+<td align="left">5</td>
+<td align="left"><a href="http://www.helsinki.fi/aleksanteri/neru/activities/2010.htm">Civil Society Around the Baltic Sea (Neru Network) 6-11.6, 2010</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left">Kv-konferenssi</td>
+<td align="left">5</td>
+<td align="left"><a href="http://tatk.elte.hu/news-english/1398-espanet-2010-annual-conference">8th ESPAnet Conference 2010 Social Policy and the Global Crisis: Consequences and Responses, 2.-4.9.2010 in Budapest</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Yhteensä</strong></td>
+<td align="left">18</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="vuosi-2011"><span class="header-section-number">4.1.2</span> Vuosi 2011</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Suoritus</th>
+<th align="left">Pisteet</th>
+<th align="left">Kurssi/konferenssi</th>
+<th align="left">Suoritus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">kesakoulu</td>
+<td align="left">3</td>
+<td align="left">VASTUU-tutkijakoulu Lammilla 26.-27.5.2011</td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left">Kv-konferenssi</td>
+<td align="left">5</td>
+<td align="left"><a href="http://webh01.ua.ac.be/csb/fiss/?page_id=48">18th International Research Seminar on Issues in Social Security, June 8.-10.6, 2011.</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="odd">
+<td align="left">kesäkoulu</td>
+<td align="left">5</td>
+<td align="left"><a href="http://www.socialpolicy.ed.ac.uk/recwowetac/summer_schools/budapest_2011">ESPANET/RECWOWE summer school: Welfare States of Eastern and Western Europe, 27.6-8.7.2011</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left">Kesäkoulu</td>
+<td align="left">5</td>
+<td align="left">Life course dynamics and the mechanisms of social inequality, 29.8 –2.9, 2011 (TCWR, University of Turku)</td>
+<td align="left">kurssi + harjoitustyö</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Yhteensä</strong></td>
+<td align="left">18</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="vuosi-2012"><span class="header-section-number">4.1.3</span> Vuosi 2012</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Suoritus</th>
+<th align="left">Pisteet</th>
+<th align="left">Kurssi/konferenssi</th>
+<th align="left">Suoritus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">kesäkoulu</td>
+<td align="left">5</td>
+<td align="left">The Finnish Centre of Excellence in Russian Studies Summer School: Choices of Modernisation, June 3-8, 2012</td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left">kv-konferenssi</td>
+<td align="left">5</td>
+<td align="left"><a href="http://www.nova.no/id/24834">ISA RC19 Oslo, 23-25.8.2012</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="odd">
+<td align="left">kv-konferenssi</td>
+<td align="left">5</td>
+<td align="left"><a href="http://www.espanet2012.info/in_edinburgh">10th ESPAnet Anniversary Conference 2012 Edinburgh. September 7, 2012.</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Yhteensä</strong></td>
+<td align="left">15</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="vuosi-2013"><span class="header-section-number">4.1.4</span> Vuosi 2013</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Suoritus</th>
+<th align="left">Pisteet</th>
+<th align="left">Kurssi/konferenssi</th>
+<th align="left">Suoritus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">kv-konferenssi</td>
+<td align="left">5</td>
+<td align="left"><a href="http://www.hse.ru/rlms/conference">1st International Russia Longitudinal Monitoring Survey of HSE User Conference, Moscow, 17.-18.5, 2013</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left">kesäkoulu</td>
+<td align="left">5</td>
+<td align="left"><a href="http://www.sv.uio.no/english/research/doctoral-degree/summer-school/courses-2013/bivand.html">Oslo Summer School in Comparative Social Science Studies 2013: Using Spatial Data &amp; Workshops in the Social Sciences: An Applied Survey 22.-26.7, 2013</a></td>
+<td align="left">ennakkolukemisto &amp; osallistuminen</td>
+</tr>
+<tr class="odd">
+<td align="left">kesäkoulu</td>
+<td align="left">5</td>
+<td align="left">Aleksanteri-instituutin tutkijakoulun &amp; Glasgow’n yliopiston kesäkoulu 8-12.6.2013 Ahvenanmaalla</td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="even">
+<td align="left">kv-konferenssi</td>
+<td align="left">5</td>
+<td align="left"><a href="http://lcsr.hse.ru/en/Conference2013">3rd International Annual Research Conference: “Cultural and Economic changes under cross-national perspective”. HSE-Moscow, 12.-17.11, 2013</a></td>
+<td align="left">paper &amp; presentation</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Yhteensä</strong></td>
+<td align="left">20</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="yhteensä-vuosina-2010---2013"><span class="header-section-number">4.1.5</span> Yhteensä vuosina 2010 - 2013</h3>
+<p>Kesäkouluista ja kv-konferensseista yhteensä ~ <strong>71</strong> opintopistettä. Valtaosa odottaa vielä rekisteriin viemistä. Tämän lisäksi on aika paljon kaikkea muuta seminaaria ja kurssia, josta voisi opintopisteitä tulla.</p>
+<h2 id="artikkelit"><span class="header-section-number">4.2</span> Artikkelit</h2>
+<ol style="list-style-type: decimal">
+<li>Attributions for poverty
+<ul>
+<li>lähtee ensi viikolla kielentarkastukseen</li>
+<li>lähtee huomenna Moskovaan (HSE associate researcher konferenssi maaliskuun lopussa)</li>
+</ul></li>
+<li>Eu-silc material reprivation pitkittäispaperi
+<ul>
+<li>vaatisi kuukauden intensiivistä työtä</li>
+</ul></li>
+<li>Venäjän paikka+köyhyyspaperi
+<ul>
+<li>odottaa <a href="http://www.perepis-2010.ru/">2010 väestölaskennan mikrodatan julkaisua</a>. Se pitäisi tulla hetkenä minä hyvänsä.</li>
+</ul></li>
+<li>Venäjän luontoisetuuksien rahamääräistämistä käsittelevä paperi
+<ul>
+<li>vaatisi reilusti paneutumista</li>
+<li>Pidin juuri luennon <a href="https://github.com/muuankarski/sosiaalipolitiikka-venaja">köyhyydestä ja sosiaaliturvasta Venäjällä</a> Porvoossa ikäihmisten yliopistossa ja kehittelen paperia vähän eteenpäin luentoa kirjottaessani</li>
+</ul></li>
+<li>rustfare-pakettia kuvaava menetelmällinen artikkeli
+<ul>
+<li>vaatisi pari viikkoa paketin viimeistelyyn ja kuukauden paperin kirjoittamiseen</li>
+</ul></li>
+</ol>
+<h2 id="rahoitussuunnitelmat"><span class="header-section-number">4.3</span> Rahoitussuunnitelmat</h2>
+<p>Alkuvuonna minua on pyydetty mukaan kahteen suurempaan menetelmiin ja teknologiaan liittyvään rahoitushakuun HY:ssä, joihin olen tehnyt vähän töitä ja nimenä mukana. Myös yliopiston ulkopuolelta on tiedusteltu mahdollisuuksia koodata analyysisovelluksia ja olen kertonut olevani ilman sopimusta maaliskuun lopulta alkaen ja olevani kiinnostunut lyhyistä projekteista. Saan tarkempaa selkoa vielä tämän kuun puolella näistä. Muutenkin R-taidoille alkaa olla myös Suomessa hiljalleen kysyntää yliopistojen ulkopuolella. (USA:ssa R-kieli oli viime vuonna parhaiten palkattu it-taito (<a href="http://marketing.dice.com/pdf/Dice_TechSalarySurvey_2014.pdf">Dice Tech Salary Survey 2013-2014, s. 9</a>).) Koti-isan ja konsultin yhdistelmä on myös yksi vaihtoehto, mutta Turun yliopiston tilanne luonnollisesti kiinnostaa kovasti.</p>
+<h1 id="yhteenvetoartikkeli"><span class="header-section-number">5</span> Yhteenvetoartikkeli</h1>
 <p><strong>Poverty, place and income redistribution - Analysis of poverty dynamics and welfare state development in post-socialist transition</strong></p>
-
 <p><em>Summary article will be a lean and short introduction to my research project. It will provide an overarching conceptual and methodological frame for the individual articles and precisely speak out the contribution of the overall thesis and the individual articles.</em></p>
-
 <p><strong>Evolution</strong></p>
-
-<table><thead>
-<tr>
-<th>Conference</th>
-<th>Date</th>
-<th>Paper</th>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Conference</th>
+<th align="left">Date</th>
+<th align="left">Paper</th>
 </tr>
-</thead><tbody>
-<tr>
-<td><strong>Current state</strong></td>
-<td>Feb 2013</td>
-<td><a href="summary/summary.html">Disposition</a></td>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Current state</strong></td>
+<td align="left">Feb 2013</td>
+<td align="left"><a href="summary/summary.html">Disposition</a></td>
 </tr>
-</tbody></table>
-
+</tbody>
+</table>
 </body>
-
 </html>

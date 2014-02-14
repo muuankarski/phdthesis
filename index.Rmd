@@ -15,11 +15,10 @@ Johdanto
 
 Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projektit. Sivujen vasemmassa laidassa on aina ko. sivun sisällysluettelo. Kuvaus projektin nykytilasta ja lähitulevaisuudesta löytyy kohdasta [Tapahtunutta vuonna 2013 ja suunnitelmaa vuodelle 2014](plan2014.html). Aikaisemmat vuosikertomukset ja suunnitelmat löytyvät [hieman alempaa](#toc_2). Ajantasainen projektin yhteenveto löytyy [sivun lopusta](#toc_11). 
 
-
+```{r, echo=FALSE}
+stamp <- Sys.time()
+paste("Päivitetty",stamp)
 ```
-## [1] "Päivitetty 2014-02-14 18:29:29"
-```
-
 
 
 Tämän sivun linkit johtavat projektieni sivuille [GitHub](https://github.com/):ssa. *Github* on yksi monista [*git*](http://fi.wikipedia.org/wiki/Git)-[versionhallinnan](http://chronicle.com/blogs/profhacker/a-gentle-introduction-to-version-control) *hosting*-palveluista. Github:ia käytetään etupäässä avoimen lähdekoodin ohjelmistoprojekteissa, mutta yhä enemmän myös akateemisten tutkimusprojektien alustana. Itse pidän kirjaa tekstieni ja analyysieni versiohistoriasta *git*:n avulla ja julkaisen versiohistoriat etenkin yhteistyöprojekteissa *GitHubissa*. Tämän sivun linkit johtavat projektien ns. *julkisille sivuille*, joista ei pääse ilman tunnuksia ja minun valtuutusta katsomaan itse tutkimuksen etenemistä. Sitten itse asiaan.
