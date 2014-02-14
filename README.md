@@ -17,7 +17,7 @@ Tälle sivulle on linkitetty väitöstutkimukseni kannalta tärkeimmät projekti
 
 
 ```
-## [1] "Päivitetty 2014-02-14 18:29:29"
+## [1] "Päivitetty 2014-02-14 18:33:24"
 ```
 
 
